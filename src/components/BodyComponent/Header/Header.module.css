@@ -1,12 +1,19 @@
 .header{
-    max-width: 480px;
+    max-width: 412px;
     width: 100%;
-    background-color: aquamarine;
     height: 400px;
     filter: contrast(1.5);
     margin: auto;
-    background: url('./src/images/pudim7.jpeg');
-    background-size: cover;
-    background-position: 30% 50%;
-    background-repeat: no-repeat;
+}
+@media (min-width:1920px) {
+    .header{
+        max-width: 1920px;
+     width: 100%;
+    }.hero{
+        max-width: 1000px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: auto;
+    }
 }

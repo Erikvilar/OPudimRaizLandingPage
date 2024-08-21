@@ -1,55 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 .heroComponent {
-  background-color: rgba(255, 255, 255, 0.516);
-  height: 350px;
+  background-color: rgba(255, 255, 255, 0.721);
+  height: 380px;
   width: 50%;
+  position: absolute;
+  top: 0px;
+  z-index: 1;
   box-shadow: 10px 0px 50px 0px black;
 }
+
 .heroComponent div h1 {
   text-align: center;
-  text-shadow: 0px 2px 10px rgb(112, 112, 112);
-  color: rgb(65, 64, 64);
+  font-family: "Montserrat",sans-serif;
+  /* text-shadow: 0px 2px 10px rgba(238, 237, 237, 0.685); */
+  background: #FFD928;
+  background: linear-gradient(to right, #9d8002 0%, #D44400 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 100% 100%;
+background-position: 0px 0px;
   
   font-weight: 700;
-  font-size: 15px;
-  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+
 }
 .heroComponent div {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 50px;
-
   color: black;
 }
 .heroComponent div p {
   font-size: 10px;
   padding: 15px;
+  font-family: "Open Sans", sans-serif;
   text-align: justify;
-  font-family: "Roboto", sans-serif;
-  color: rgb(50, 49, 49);
-  font-weight: 500;
+  margin-top: 20px;
+  color: rgb(74, 74, 74);
+  font-weight: 450;
+  text-shadow: 0px 10px 10px rgb(92, 92, 92);
 }
 .heroComponent button {
-  background-color: rgb(122, 2, 2);
+  display: block;
+  background-color: #6b2301;
   border: none;
   position: relative;
-  left: -40px;
-  margin-top: 20px;
+  left: -30px;
   font-size: 10px;
   border-radius: 15px;
   padding: 5px;
   color: white;
   cursor: pointer;
   width: 120px;
-  transition: 200ms ease;
+  transition: 300ms ease;
+}.heroComponent button:hover{
+  background-color: black;
+  color: white;
 }
 .heroComponent button:active {
   transform: scale(1.05);
   border: 2px solid white;
   cursor: pointer;
+}
+@media (min-width:1920px) {
+  .heroComponent {
+    background-color: rgba(255, 255, 255, 0.721);
+    height: 380px;
+    width: 500px;
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+    box-shadow: 10px 0px 50px 0px black;
+  }
+  
 }

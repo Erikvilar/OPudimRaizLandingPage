@@ -1,35 +1,64 @@
-.navBarComponent{
-    width: 100%;
-    background-color: black;
-    height: 50px;
-    color: white;
-    box-shadow: 0px 2px 10px 0px rgb(106, 102, 102);
+.navBarComponent {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  height: 35px;
+  color: white;
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  box-shadow: 0px 2px 10px 0px rgb(106, 102, 102);
+}
+.navBarComponent ul {
+  list-style: none;
+  display: flex;
+  margin: auto;
+  width: 300px;
   
-}.navBarComponent ul {
-    list-style: none;
-    margin: auto;
-    padding-top: 10px;
+}
+.navBarComponent ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 5px;
+  position: relative;
+  left: 0;
+  height: 18px;
+  padding-right: 5px;
+  cursor: pointer;
+}
+.navBarComponent ul li:nth-child(1) {
+  position: absolute;
+  left: 10px;
+}
+.navBarComponent ul li a {
+  color: rgb(0, 0, 0);
+
+  font-size: 8px;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+.navBarComponent ul li a:hover {
+  padding-bottom: 8px;
+  color: rgb(220, 101, 4);
+  font-weight: 600;
+  border-bottom: 1px solid rgb(220, 101, 4);
+}
+@media (min-width: 1920px) {
+  .navBarComponent ul li:nth-child(1) {
+    position: relative;
+    left: -110px;
+  }
+  .navBarComponent ul li a {
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+  }.navBarComponent ul {
+    width: 1000px;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin: auto;
+  }
 
-}.navBarComponent ul li {
-    list-style: none;
-    display: inline-block;
-    margin: 5px;
-    height: 18px;
-    padding-right: 5px;
-
-}.navBarComponent ul li a{
-   color: white;
-   font-size: 10px;
-   text-decoration: none;
-   font-family: "Roboto",sans-serif;
-   
-
-}.navBarComponent ul li a:hover{
-    padding-bottom:8px ;
-    border-bottom:0.5px solid white ;
-   
 }
+
