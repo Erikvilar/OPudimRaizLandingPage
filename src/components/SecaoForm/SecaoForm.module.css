@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding: 0;
+}
+
+.bg {
+   
+    padding-bottom: 30px;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 30px;
+    font-weight: 700;
+ 
+
+}
+
+p {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.form {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}.ComponentForm{
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.form > label {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+input {
+
+   
+    height: 6vh;
+    color: orange;
+    width: 6vh;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+input[name="mensagem"] {
+    height: 15vh;
+}
+
+input[type="button"] {
+    margin-top: 15px;
+    width: 100%;
+    height: 6vh;
+    color: white;
+    border: 1px solid #230000;
+    
+}
+
+@media (min-width: 768px){
+    p {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        font-size: 1rem;
+    }
+
+    .form {
+        width: 70%;
+        margin: auto;
+    }
+
+    input {
+        width:500px;
+        height: 30px;
+    }
+
+    input[type="button"]{
+        width: 60vw;
+    }
+}
+
+@media (min-width: 1024px){
+    .container {
+        max-width: 412px;
+        width: 412px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+   
+        
+      
+    }
+    h2 {
+        font-weight: 600;
+        color: black;
+        font-size: 20px;
+        font-family: "Montserrat",sans-serif;
+    }
+
+    p {
+        color: black;
+        font-size: 1.15rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .ComponentForm {
+        max-width: 412px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+  
+       
+    }
+    .form {
+        max-width: 300px;
+        width: 100%;
+        margin: auto;   
+        padding: 10px;
+    
+        border-radius: 20px;
+        display: flex;
+        align-items: start;
+  
+       
+    }
+
+    .form > label {
+        margin-bottom: 15px;
+        margin-top: 15px;
+        font-size: 1rem
+
+    }
+
+    input {
+        max-width: 250px;
+        border: none;
+        border-bottom: 1px solid rgb(211, 114, 11);
+        height: 25px;
+        padding-bottom: 10px;
+        width: 300px;
+        transition: all 300ms ease;
+    }
+    
+    input:focus{
+    border: none;
+
+    border-bottom: 1px solid rgb(211, 114, 11);
+       outline: none;
+    }input:hover{
+        padding: 20px;
+    }
+
+
+    input[type="button"] {
+        max-width: 250px;
+        width: 100%;
+        background-color: #230000   ;
+        border: none;
+        border-radius: 10px;
+  
+    }  input[type="button"]:hover{
+       padding: 0px
+  
+    }
+   
+}
+
+@media (min-width: 1280px){
+    p {
+        font-size: 1.15rem;
+    }
+
+.form {
+   width: 40vw;
+}
+input {
+    width: 35vw;
+}
+input[type="button"] {
+    width: 35vw;
+}
+}
+
+@media (min-width: 1420px){
+    .form {
+        width: 50vw;
+        height: 85vh;
+    }
+
+    input {
+        width: 45vw;
+    }
+
+    input[type="button"] {
+        width: 45vw;
+        font-size: 1.3rem;
+    }
+}
