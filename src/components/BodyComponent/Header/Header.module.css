@@ -1,0 +1,12 @@
+.header{
+    max-width: 480px;
+    width: 100%;
+    background-color: aquamarine;
+    height: 400px;
+    filter: contrast(1.5);
+    margin: auto;
+    background: url('./src/images/pudim7.jpeg');
+    background-size: cover;
+    background-position: 30% 50%;
+    background-repeat: no-repeat;
+}
