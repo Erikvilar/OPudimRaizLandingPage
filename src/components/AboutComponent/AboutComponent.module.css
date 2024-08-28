@@ -1,0 +1,35 @@
+.AboutComponent{
+
+    padding: 20px;
+
+}.AboutContent{
+    display: flex;
+
+
+
+}.AboutContent p{
+    display: flex;
+    margin-top: 10px;
+    font-size: 12px;
+    color: rgba(71, 71, 71, 0.877);
+    font-family: "Poppins",sans-serif
+    
+
+
+}.AboutContent h3{
+    font-family: "Prata", serif;
+    font-size: 20px;
+    color: rgb(100, 100, 100);
+   
+
+}
+
+.AboutContentImg  {
+  
+    padding: 5px;
+}
+.AboutContentImg img{
+    border-radius: 10px;
+    border: 0.5px solid orange;
+    filter: contrast(1.1);
+}

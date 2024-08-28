@@ -1,24 +1,34 @@
-import Carousel from 'react-bootstrap/Carousel';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import css from "./CarouselComponent.module.css"
-const CarouselComponent = () => {
-	return (
-		<Carousel fade className={css.Carousel}>
-		  <Carousel.Item className={css.CarouselItem} >
-			<img src="https://github.com/Erikvilar/OPudimRaizLandingPage/blob/main/src/images/pudim7.jpeg?raw=true"/>
-		  </Carousel.Item>
-		  <Carousel.Item className={css.CarouselItem} >
-			<img src="https://github.com/Erikvilar/OPudimRaizLandingPage/blob/main/src/images/pudim5.jpeg?raw=true"/>
-		  </Carousel.Item>
-		  <Carousel.Item className={css.CarouselItem} >
-			<img src="https://github.com/Erikvilar/OPudimRaizLandingPage/blob/main/src/images/pudim1.jpeg?raw=true"/>
-		  </Carousel.Item>
-		  <Carousel.Item className={css.CarouselItem} >
-			<img src="https://github.com/Erikvilar/OPudimRaizLandingPage/blob/main/src/images/pudim3.jpeg?raw=true"/>
-		  </Carousel.Item>
-		  
-		
-		</Carousel>
-	  );
-}
+import Carousel from "react-bootstrap/Carousel";
+
+import css from "./CarouselComponent.module.css";
+import products from "../Data/Products";
+
+const CarouselComponent = ({object , classType}) => {
+  return (
+    <Carousel fade={false}  className={classType}>
+
+
+
+
+      {object == products.PrimaryContent ? object.map((n, index) =>(
+        <Carousel.Item className={css.CarouselItem} key={index}>
+          <div className="ProductBox" >
+            <img src={n.img} alt="" />
+            <h3>{n.name}</h3>
+            <p>{n.desc}</p>
+          </div>
+        </Carousel.Item>
+      )):(
+       products.Background.map((item,index )=>(
+        <Carousel.Item className={css.CarouselItem} key={index}>
+        <div>
+          <img src={item.img} alt="" />
+        </div>
+        </Carousel.Item>
+       ))
+      )}
+
+    </Carousel>
+  );
+};
 export default CarouselComponent;

@@ -4,41 +4,22 @@
     height: 380px;
     filter: contrast(1.2);
     margin: auto;
-}
-.CarouselInner{
-
+}.CarouselItem {
     max-width: 412px;
     width: 100%;
     height: 380px;
-}span{
-    display: none;
-}.Carousel span, button{
-    display: none;
-    
+    display: flex;
+    margin: auto;
 }
-@media (min-width:1920px) {
+.CarouselInner{
+    max-width: 412px;
+    width: 100%;
+    height: 380px;
+}.Carousel span{
+    color:black;
+    
+}.teste{
+    border: 2px solid red;
+    display: flex;
+}
 
-   .Carousel{
-    width: 500px;
-    position: relative;
-    left: 450px;
-   
-    }
-    .CarouselItem img{
-        display: flex;
-        justify-content: end;
-        align-items: end;
-        width: 450px;
-        height: 380px;
-        filter: contrast(1.2);
-       
-    }.CarouselInner{
-        display: flex;
-        align-items: end;
-        justify-content: end;
-        max-width: 1920px;
-        width: 1920px;
-        height: 380px;
-    }
-    
-}
