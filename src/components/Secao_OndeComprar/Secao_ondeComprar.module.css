@@ -1,0 +1,92 @@
+.bg {
+  margin-top: 100px;
+  background-color: rgb(255 210 126 / 77%);
+}
+
+hr {
+  border: 0;
+  height: 2px; 
+  background-color: #000;
+  margin-top: -10px;
+
+}
+  svg {
+    font-size: 30px;
+    color: darkred;
+}
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+   
+    padding: 32px;
+    max-width: 1440px;
+    gap: 2rem;
+    margin: auto;
+  }
+  
+  .title {
+    
+    font-size: 20px;
+  }
+  
+  .description {
+    font-size: 16px;
+    color: black;
+    margin-bottom: 16px;
+    text-align: justify;
+  }
+  
+  .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1rem;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  .instagramIcon {
+    width: 40px; 
+    height: 40px;
+  }
+  .ifooodIcon {
+    color: red; 
+  }
+  
+  .menuIcon {
+    color: #6a1616;
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 24px;
+    text-align: center;
+    flex: 1;
+    margin-bottom: 20px;
+    min-height: 170px;
+    max-width: 250px;
+    box-shadow: 0 4px 8px #D59A44;
+  }
+  
+  .card:hover{
+    background-color: #ffddcd;
+  }
+  .icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 16px;
+  }
+  
+  .cardTitle {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .cardDescription {
+    font-size: 16px;
+    color: black;
+  }
+  
+ 

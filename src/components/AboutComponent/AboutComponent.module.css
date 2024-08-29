@@ -7,7 +7,10 @@
 
 
 
-}.AboutContent p{
+}.AboutComponent h1{
+    font-size: 20px;
+}
+.AboutContent p{
     display: flex;
     margin-top: 10px;
     font-size: 12px;
@@ -18,7 +21,7 @@
 
 }.AboutContent h3{
     font-family: "Prata", serif;
-    font-size: 20px;
+    font-size: 18px;
     color: rgb(100, 100, 100);
    
 

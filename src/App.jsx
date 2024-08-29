@@ -4,10 +4,22 @@ import Main from "./components/BodyComponent/main/main"
 import "./styles/default.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import React from "react";
+
+
+
+
 
 function App() {
 
-
+  React.useEffect(() => {
+    AOS.init({
+      duration: 600,
+      easing: "ease-in-out",
+    });
+  });
   return (
     <section className={"default"}>  
     <Header/>
