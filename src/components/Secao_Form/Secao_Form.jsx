@@ -8,7 +8,7 @@ import emailjs from '@emailjs/browser';
 
 function Secao_Form() {
 
-	const [form, setForm] = useState({ nome: '', email: '', mensagem: '' });
+	const [form, setForm] = useState({ nome	: '', email: '', mensagem: '' });
 
 	function getData(e) {
 		setForm({ ...form, [e.target.name]: [e.target.value] });
