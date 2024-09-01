@@ -1,28 +1,29 @@
+.bgDepoimentos {
+  background-color: rgb(255 210 126 / 8%)
+}
 
-.wrapper {
-
-    padding: 32px 16px;
-    text-align: center;
-  }
-
-.wrapper h1{
-
-    font-size: 20px;
-  }
-
-  
- 
+.container h1 {
+  margin-bottom: 40px;
+}
   .container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+   
+    padding: 32px;
+    max-width: 1440px;
     gap: 2rem;
-    margin-top: 50px;
-    margin-bottom: 25px;
+    margin: auto;
   }
-  
+  .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1rem;
+    margin: auto;
+    margin-bottom: 30px;
+  }
   .card {
-    background-color: #ffecd1;
+    background-color: #ffdcab;
     border-radius: 8px;
     padding: 24px;
     text-align: center;
@@ -30,7 +31,6 @@
     max-width: 300px;
     box-shadow: 0 4px 8px #523b1a;
     position: relative;
-    margin: auto;
     margin-bottom: 32px;
   }
   
@@ -41,7 +41,7 @@
     object-fit: cover;
     margin-bottom: 16px;
     position: absolute;
-    left: 35%;
+    left: 32%;
     top: -30px;
   }
   
@@ -61,3 +61,41 @@
     text-align: justify;
   }
   
+  @media (min-width: 768px){
+    .container {
+      max-width: 768px;
+    }
+
+    .cards {
+      flex-direction: row;
+    }
+
+    .image {
+      left: 30%;
+    }
+    .testimonial  {
+      font-size: 12px;
+    }
+  }
+
+  @media (min-width: 1024px){
+    .container {
+      max-width: 1024px;
+    }
+    .name {
+      font-size: 22px;
+    }
+    .testimonial {
+      font-size: 17px;
+  }
+
+  .image {
+    left: 35%;
+}
+   }
+
+   @media (min-width: 1420px){
+    .container {
+      max-width: 1420px;
+    }
+   }

@@ -1,6 +1,7 @@
 import React from "react";
 import { BiFoodMenu } from "react-icons/bi";
-
+import "../../styles/default.css"
+import instagramIcon from "../../images/instagram.png"; 
 import { SiIfood } from "react-icons/si";
 import css from "./Secao_ondeComprar.module.css";
 
@@ -8,7 +9,7 @@ const ServiceData = [
   {
     title: "INSTAGRAM",
     description: "Veja e solicite em nosso perfil.",
-    icon: <img src="https://github.com/samylledutra/OPudimRaizLandingPage/blob/main/src/images/instagram.png?raw=true" alt="Instagram"className={css.instagramIcon} />,
+    icon: <img src={instagramIcon} alt="Instagram"className={css.instagramIcon} />,
     aosDelay: "300",
   },
   {
@@ -30,7 +31,7 @@ function OndeComprar() {
     <section>
       <div className={css.bg}>
         <div className={css.container}>
-          <h1 className={css.title}>Onde comprar nossos pudins</h1>
+          <h1 className={"title"}>Onde comprar nossos pudins</h1>
           <hr />
           <p className={css.description}>
             Você pode encontrar nossos deliciosos pudins em diversas plataformas e canais de comunicação. Escolha o método que for mais conveniente para você e desfrute de nossos sabores irresistíveis.

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import css from './Secao_Form.module.css'
+import "../../styles/default.css"
 import { FaPhoneVolume, FaLocationDot  } from "react-icons/fa6";
 import { MdMarkEmailRead } from "react-icons/md";
 import emailjs from '@emailjs/browser';
@@ -49,9 +50,10 @@ function Secao_Form() {
 	}
 
 	return (
-		<section className={css.bg}>
+		<section>
+			<div  className={css.bgForm}>
 				<div className={css.container}>
-				<h1 >Entre em Contato Conosco</h1>
+				<h1 className={"title"}>Entre em Contato Conosco</h1>
 					<div className={css.formContainer} data-aos="zoom-in" >
 					<form className={css.form} >
 				<label htmlFor="">Digite o seu nome*</label>
@@ -68,7 +70,7 @@ function Secao_Form() {
 
 				<input type="button" value="Enviar" onClick={validar} />
 			</form>
-					</div>
+					
 					<div className={css.contactContainer}>
 				
 						<p className={css.description}>
@@ -90,7 +92,9 @@ function Secao_Form() {
 							</div>
 						</div>
 					</div>
+					</div>
 				</div>
+				</div>	
 		</section>
 	);
 }

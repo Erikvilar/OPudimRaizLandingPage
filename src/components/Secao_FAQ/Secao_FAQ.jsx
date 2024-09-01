@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { MdOutlineQuestionAnswer } from "react-icons/md";
 import css from './Secao_FAQ.module.css';
+import "../../styles/default.css"
 
 const FAQ = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -16,19 +17,19 @@ const FAQ = () => {
     },
     {
       question: 'Vocês realizam entregas?',
-      answer: 'Sim, realizamos entregas em Uberlândia, cobrindo 90% dos bairros.'
+      answer: 'Sim, realizamos entregas em Uberlândia - MG, cobrindo 90% dos bairros.'
     },
     {
       question: 'Há cobrança de taxa de entrega?',
-      answer: 'Sim, a taxa de entrega é terceirizada e calculada de acordo com o endereço de destino'
+      answer: 'Sim, a taxa de entrega é terceirizada e calculada de acordo com o endereço de destino.'
     }
   ];
 
   return (
     <section className={css.bgFAQ}>
       <div className={css.container}>
-        <h1>Perguntas Frequentes</h1>
-        <hr></hr>
+        <h1 className={"title"}>Perguntas Frequentes</h1>
+      <hr />
         <div className={css.faqItem}>
           {faqs.map((faq, index) => (
             <div key={index}>
