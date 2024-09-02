@@ -24,7 +24,8 @@
     }
   
     .faqItem {
-      margin-top: 10px
+      margin-top: 10px;
+      margin-bottom: 30px;
     }
     .faqQuestion {
       margin: 0.5rem 0;
