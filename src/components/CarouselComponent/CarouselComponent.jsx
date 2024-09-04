@@ -1,34 +1,17 @@
 import Carousel from "react-bootstrap/Carousel";
-
 import css from "./CarouselComponent.module.css";
 import products from "../Data/Products";
 
-const CarouselComponent = ({object , classType}) => {
+function CarouselComponent ({type, object}) {
   return (
-    <Carousel fade={false}  className={classType}>
-
-
-
-
-      {object == products.PrimaryContent ? object.map((n, index) =>(
-        <Carousel.Item className={css.CarouselItem} key={index}>
-          <div className="ProductBox" >
-            <img src={n.img} alt="" />
-            <h3>{n.name}</h3>
-            <p>{n.desc}</p>
-          </div>
-        </Carousel.Item>
-      )):(
-       products.Background.map((item,index )=>(
-        <Carousel.Item className={css.CarouselItem} key={index}>
+  <Carousel className={css.Carousel} fade={type}  >
+    {object.map((n, index) => (
+      <Carousel.Item className={css.CarouselItem} key={index}>
         <div>
-          <img src={item.img} alt="" />
+          <img src={n.img} alt="" />    
         </div>
-        </Carousel.Item>
-       ))
-      )}
-
-    </Carousel>
-  );
-};
+      </Carousel.Item>
+    ))}
+  </Carousel>
+)};
 export default CarouselComponent;

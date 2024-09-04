@@ -8,7 +8,7 @@ const Header = () => {
     <header className={css.header}>
        
       <div className={css.hero}>
-        <CarouselComponent object={products.Background}/>
+        <CarouselComponent object={products.Background} type={true}/>
         <HeroComponent />
       </div>
       <NavbarComponent />

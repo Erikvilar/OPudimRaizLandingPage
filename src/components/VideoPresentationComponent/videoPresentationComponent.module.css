@@ -1,0 +1,79 @@
+.videoComponent{
+ margin-top: 50px;
+   height: 600px; 
+    width: 360px;
+    margin: auto;
+
+
+
+}
+.videoComponent video{
+
+filter: contrast(0.7);
+
+}
+.contentPresentation{
+    position: relative;
+    height: 640px;
+    top: -645px;
+    background-image: linear-gradient(to right, #cf9a46ad, #d3cece6c );   
+     bottom: 0;
+    width: 360px;
+  
+ 
+}.contentPresentation h2{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding-top: 100px;
+    padding-left: 10px;
+
+}.contentPresentation p{
+    color: white;
+    font-size: 15px;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 400;
+    padding-top: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}.contentPresentation button{
+    background-color: orange;
+    color: white;
+    border: none;
+    margin-top: 100px;
+    margin-left: 10px;
+    border-radius: 10px;
+    width: 120px;
+    height: 50px;
+  
+
+}.contentPresentation button{
+    background-color: orange;
+    color: white;
+    border: none;
+    margin-top: 100px;
+    margin-left: 10px;
+    border-radius: 10px;
+    width: 120px;
+    height: 50px;
+  
+
+}.contentPresentation button{
+    background-color: orange;
+    color: white;
+    border: none;
+    margin-top: 100px;
+    margin-left: 10px;
+    border-radius: 10px;
+    width: 120px;
+    height: 50px;
+  
+
+}.contentPresentation button:hover{
+    background-color: rgb(255, 255, 255);
+    color: orange;
+  
+}

@@ -9,13 +9,13 @@
 
 
   background-image: linear-gradient(to top, #4c4c4ce5, #3a3a3ad2, #282828d8, #181818a8, #00000000);
-  height: 380px;
+  height: 35px;
   width:360px;
   position: absolute;
   top: 0px;
   z-index: 1;
-  box-shadow: 10px 0px 50px 0px rgba(63, 63, 62, 0.685);
-}
+}  
+
 .heroComponent div {
   display: flex;
   flex-direction: column;

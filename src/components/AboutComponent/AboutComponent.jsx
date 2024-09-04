@@ -3,14 +3,15 @@ const AboutComponent = () => {
 	return (
 	
 		<section className={css.AboutComponent}>
-			<h1>Veja nossos sabores</h1>
+			<h1>Quem somos</h1>
 			<div className={css.AboutContent}>
 				<div>
-				<h3>Pudim tradicional</h3>
-				<p>O pudim tradicional sem duvidas e o mais querido, por sua textura já conhecida e o sabor tradicional, desperta a vontade em todos nos de querer mais um pedaço.</p>
+				<h3>O Pudim Raiz</h3>
+				<span>Tânia Katia</span>
+				<p>Somos o Pudim Raiz, um empreendimento dedicado a trazer o sabor da infância para os dias de hoje. Especializados na produção artesanal de pudins, utilizamos ingredientes de alta qualidade para recriar receitas tradicionais e inovar com novos sabores. Atendemos Uberlândia e região, oferecendo nossas sobremesas como lembranças para eventos e delícias para o dia a dia. Nosso compromisso é com a excelência e o resgate das memórias afetivas através de cada pudim que fazemos.</p>
 				</div>
 				<div className={css.AboutContentImg}>
-				<img src="../src/images/pudimTradicionalSobre.jpeg" alt="" width={110}/>
+				<img src="./src/images/img-circle-tania.jpg" alt="" width={110}/>
 				</div>
 			</div>
 

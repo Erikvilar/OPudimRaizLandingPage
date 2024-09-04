@@ -22,6 +22,7 @@ h1 {
   background-position: 0px 0px;
   margin-bottom: 20px;
   font-weight: 700;
+
   font-size: 20px;
 }
 
@@ -34,11 +35,14 @@ h1 {
   margin: auto;
   margin-top: 40px;
   width: 100%;
-  max-height:360px;
+  max-height: 360px;
   justify-content: center;
-}.CarouselVendor{
+}
+.CarouselVendor button {
+  display: none;
+}
 
-}.CarouselVendor .ProductBox {
+.CarouselVendor .ProductBox {
   height: auto;
   display: flex;
   flex-direction: column;
@@ -49,7 +53,6 @@ h1 {
   border-radius: 10px;
 }
 .ProductBox h3 {
-  
   color: rgb(100, 100, 100);
   text-align: start;
   margin-top: 20px;
@@ -59,7 +62,7 @@ h1 {
 }
 .ProductBox p {
   font-size: 12px;
- 
+
   padding-left: 5px;
 }
 .ProductBox img {
@@ -68,21 +71,14 @@ h1 {
   border-radius: 10px;
 }
 
-.CarouselVendor span {
-  background-color: #afaeaa;
-
-  border-radius: 20px;
-}
-
-@media (min-width: 768px){
-  
+@media (min-width: 768px) {
   .title {
     font-size: 30px;
   }
+}
+
+@media (min-width: 1024px) {
+  .title {
+    font-size: 40px;
   }
-  
-  @media (min-width: 1024px){
-    .title {
-      font-size: 40px;
-    }
-  }
+}
