@@ -26,26 +26,28 @@
 }
 
 .heroComponent div h1 {
-  margin-top: 50px;
-  margin-bottom: 20px;
+  padding-top: 10px;
+  width: 360px;
+ filter: contrast(1.8);
+  margin-top: 20px;
   text-align: center;
-  font-family: "Montserrat", sans-serif;
-  /* text-shadow: 0px 2px 10px rgba(238, 237, 237, 0.685); */
-
- background-color: orange;
-  -webkit-background-clip: text;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: linear-gradient(to right, #efca84 10%, #8f4624 100%);
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 100% 100%;
   background-position: 0px 0px;
   font-weight: 700;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .heroComponent div p {
-  font-size: 12px;
+  font-size: 15px;
   width: 280px;
-
-  font-family: "Open Sans", sans-serif;
+  filter: contrast(1.8);
+  line-height: 25px;
+  font-family: "Prata", sans-serif;
   text-align: center;
   margin-top: 20px;
   color: rgb(220, 220, 220);
@@ -53,11 +55,11 @@
 }
 .heroComponent button {
   display: block;
-  background-color: #88331ec2;
+  background-color: #88331e;
   border: none;
   position: relative;
-
-  font-size: 10px;
+  margin-top: 150px;
+  font-size: 12px;
   border-radius: 15px;
   padding: 10px;
   color: white;
@@ -72,6 +74,6 @@
 }
 .heroComponent button:active {
   transform: scale(1.05);
-  margin-top: 10px;
+
   cursor: pointer;
 }

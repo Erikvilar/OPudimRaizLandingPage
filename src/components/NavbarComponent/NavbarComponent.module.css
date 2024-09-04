@@ -1,8 +1,8 @@
 .navBarComponent {
   width: 360px;
-  background-color: rgb(255 210 126 );
+  background-color:white;
 
-  height: 35px;
+  height: 50px;
   color: white;
   position: fixed;
   z-index: 1;
@@ -26,14 +26,37 @@
   padding-right: 5px;
   cursor: pointer;
 }
-.navBarComponent ul li:nth-child(1) {
-  position: absolute;
-  left: 0px;
+.navBarComponent button:nth-child(2) {
+  background-color: rgb(255 210 126 / 77%);
+
+  border-radius: 10px;
+  font-size: 12px;
+  text-align: center;
+  padding: 10px;
+  border: none;
+  margin-left: 100px;
+  margin-right: 10px;
+  margin-top: 5px;
+  color: rgb(218, 88, 7);
+}
+.navBarComponent button:nth-child(3) {
+  background-color:  rgb(139, 105, 1);
+  border-radius: 10px;
+  font-size: 12px;
+  margin-top: 5px;
+  border: none;
+  text-align: center;
+  padding: 10px;
+  color: white;
+}
+
+.navBarComponent ul li:nth-child(3) {
+
 }
 .navBarComponent ul li a {
   color: rgb(255, 255, 255);
   font-weight: 500;
-  font-size: 10px;
+  font-size: 14px;
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
 }

@@ -6,12 +6,17 @@ const NavbarComponent = () => {
 		<nav className={css.navBarComponent}>
 			<div>
 				<ul>
-					<li onMouseOver={() => setBackground("#dc6504")} onMouseLeave={()=> setBackground("#000000")}><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill={background}><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li>
-					<li><a href="">HOME</a></li>
+					<li onMouseOver={() => setBackground("#dc6504")} onMouseLeave={()=> setBackground("#000000")}>
+						<svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill={background}><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li>
+					<button>Contatos</button>
+					<button>Produtos</button>
+					
+					
+					{/* <li><a href="">HOME</a></li>
 					<li><a href=""> SOBRE NÓS </a></li>
 					<li><a href=""> PRODUTOS </a></li>
 					<li><a href="">FAQ </a></li>
-					<li><a href="">CONTATO</a></li>
+					<li><a href="">CONTATO</a></li> */}
 				</ul>
 			</div>
 

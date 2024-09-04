@@ -1,6 +1,5 @@
 import Carousel from "react-bootstrap/Carousel";
 import css from "./CarouselComponent.module.css";
-import products from "../Data/Products";
 
 function CarouselComponent ({type, object}) {
   return (
@@ -9,7 +8,9 @@ function CarouselComponent ({type, object}) {
       <Carousel.Item className={css.CarouselItem} key={index}>
         <div>
           <img src={n.img} alt="" />    
+          
         </div>
+        <p>{n.text}</p>
       </Carousel.Item>
     ))}
   </Carousel>

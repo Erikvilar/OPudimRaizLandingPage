@@ -22,7 +22,8 @@ h1 {
   background-position: 0px 0px;
   margin-bottom: 20px;
   font-weight: 700;
-
+  width: auto;
+  
   font-size: 20px;
 }
 
@@ -37,9 +38,6 @@ h1 {
   width: 100%;
   max-height: 360px;
   justify-content: center;
-}
-.CarouselVendor button {
-  display: none;
 }
 
 .CarouselVendor .ProductBox {
