@@ -1,5 +1,5 @@
 .bgFAQ {
-  background-color: rgb(255 210 126 / 38%);
+  background-image: linear-gradient(to right top, #ffd27e, #ffd080, #ffcf83, #ffcd85, #ffcc88);
   }
   .container {
       display: flex;
@@ -51,11 +51,11 @@
     
     
   .faqQuestion:hover {
-    background-color: rgb(246 189 96 / 28%);
+    background-color: rgb(255 255 255);
   }
     .faqQuestion.active+.faqAnswer {
       display: block;
-      background-color: rgb(246 189 96 / 28%);
+      background-color: rgb(255 255 255);
     }
     
     .questionText {
