@@ -22,6 +22,7 @@ const FAQ = () => {
     {
       question: 'Há cobrança de taxa de entrega?',
       answer: 'Sim, a taxa de entrega é terceirizada e calculada de acordo com o endereço de destino.'
+      
     }
   ];
 
