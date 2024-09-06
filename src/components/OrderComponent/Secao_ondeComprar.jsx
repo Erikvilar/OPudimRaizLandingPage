@@ -1,7 +1,7 @@
 import React from "react";
 import { BiFoodMenu } from "react-icons/bi";
 import "../../styles/default.css"
-import instagramIcon from "../../images/instagram.png"; 
+import instagramIcon from "../../images/instagram.png";
 import { SiIfood } from "react-icons/si";
 import css from "./Secao_ondeComprar.module.css";
 
@@ -9,7 +9,7 @@ const ServiceData = [
   {
     title: "INSTAGRAM",
     description: "Veja e solicite em nosso perfil.",
-    icon: <img src={instagramIcon} alt="Instagram"className={css.instagramIcon} />,
+    icon: <img src={instagramIcon} alt="Instagram" className={css.instagramIcon} />,
     aosDelay: "300",
   },
   {
@@ -39,11 +39,23 @@ function OndeComprar() {
           <div className={css.cards} data-aos="fade-up" data-aos-delay="300">
             {ServiceData.map((data, index) => (
               <div key={index} className={css.card} data-aos="fade-up" data-aos-delay={data.aosDelay}>
-                {data.icon}
+                <div data-aos="zoom-in" data-aos-delay="600">
+                  {data.icon}
+                </div>
                 <h2 className={css.cardTitle}>{data.title}</h2>
                 <p className={css.cardDescription}>{data.description}</p>
               </div>
+
+
             ))}
+          </div>
+          <div className={css.feedbackSection}>
+            <p className={css.feedbackText}>
+              Não encontrou o canal ideal para você? Deixe sua sugestão ou entre em contato!
+            </p>
+            <button className={css.feedbackButton}>
+              Entrar em contato
+            </button>
           </div>
         </div>
       </div>
