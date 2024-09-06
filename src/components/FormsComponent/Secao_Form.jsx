@@ -94,8 +94,11 @@ function Secao_Form() {
 					</div>
 					</div>
 				</div>
-				</div>	
+				<div className={css.iframeForm}>
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.42773720222!2d-48.274111991397085!3d-18.912452082184753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a445aefb165bf1%3A0x275b65a24f89827!2sR.%20Roosevelt%20de%20Oliveira%20-%20Uberl%C3%A2ndia%2C%20MG%2C%2038400-610!5e0!3m2!1spt-BR!2sbr!4v1725481991904!5m2!1spt-BR!2sbr" title="onde nos encontrar"width="360" height="250"/>
+				</div>
+				</div>	
+				
 
 		</section>
 	);
