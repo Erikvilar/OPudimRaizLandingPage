@@ -14,6 +14,7 @@
     max-width: 400px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 30px;
     
 }
   
@@ -104,6 +105,13 @@
   .icon {
     font-size: 1.25rem;
   }
+
+  .iframeForm {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; 
+  }
   
 @media (min-width: 768px){
   .formContainer {
@@ -120,6 +128,9 @@
 .contactItem {
   font-size: 17px;
 }
+iframe{
+  width: 768px;
+}
 }
 
 @media (min-width: 1024px){
@@ -132,6 +143,9 @@
     .form {
       font-size: 20px;
     }
+    iframe{
+      width: 1024px;
+    }
 }
 
 @media (min-width: 1420px){
@@ -141,5 +155,9 @@
 
     .formContainer {
         max-width: 1420px;
+    }
+
+    iframe{
+      width: 1420px;
     }
 }
