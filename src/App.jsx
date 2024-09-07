@@ -23,7 +23,7 @@ function App() {
   });
   return (
     <section className={"default"}>  
-    <Header/>
+
     <Main/>
     <Footer/>
     </section>

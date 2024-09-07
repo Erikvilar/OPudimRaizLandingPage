@@ -1,135 +1,148 @@
-
 .bg {
+  margin-bottom: 100px;
 
-  margin-top: 100px;
-  background-image: linear-gradient(to right top, #ffd27e, #ffd080, #ffcf83, #ffcd85, #ffcc88);
+  background-color: white;
 }
 
 .container hr {
   border: 0;
-  height: 2px; 
+  height: 2px;
   background-color: #000;
   margin-top: -10px;
-
 }
-  svg {
-    font-size: 30px;
-    color: darkred;
+svg {
+  font-size: 30px;
+  color: darkred;
 }
-  
-  .container {
-    display: flex;
-    flex-direction: column;
-   
-    padding: 32px;
-    max-width: 1440px;
-    gap: 2rem;
-    margin: auto;
-  }
-  
-  .description {
-    font-size: 16px;
-    color: black;
-    margin-bottom: 16px;
-    text-align: justify;
-  }
-  
-  .cards {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    gap: 1rem;
-    margin: auto;
-  }
-  .instagramIcon {
-    width: 30px; 
-    height: 30px;
-  }
-  .ifooodIcon {
-    color: red; 
-  }
-  
-  .menuIcon {
-    color: #bb0000;
-  }
-  
-  .card {
-    background-color: white;
-    border-radius: 8px;
-    padding: 24px;
-    text-align: center;
-    flex: 1;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 8px #D59A44;
-  }
-  
-  .card:hover{
-    box-shadow: 0px 7px 10px 2px rgba(255, 198, 154, 1);
-  }
-  .icon {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 16px;
-  }
-  
-  .cardTitle {
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 10px;
-    margin-bottom: 30px;
-  }
-  
-  .cardDescription {
-    font-size: 15px;
-    color: black;
-  }
 
-  .feedbackSection {
-    text-align: center;
-  }
-  
-  .feedbackText {
-    font-size: 16px;
-    margin-bottom: 30px;
-    color: #000000;
-    text-align: justify;
-  }
-  
-  .feedbackButton {
-    padding: 10px 20px;
-    background-color: #bb0000;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-size: 1rem;
-    margin-bottom: 25px;
-  }
-  
-  .feedbackButton:hover {
-    background-color: #ff3b30;
-  }
-  
-  
- @media (min-width: 420px){
+.container {
+  display: flex;
+  width: 1520px;
+  height: 720px;
+  border: 2px solid red;
+  margin: auto;
+}
+.container .background {
+  width: 50%;
+
+  filter: contrast(1.5);
+  filter: blur(2px);
+  background-image: url("src/images/pudimPote3.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.container .content {
+  width: 50%;
+  position: relative;
+
+
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.description {
+  font-size: 16px;
+  color: black;
+  margin-bottom: 16px;
+  text-align: justify;
+}
+
+.cards {
+  display: flex;
+  padding: 30px;
+  gap: 2rem;
+  flex: 1;
+  flex-direction: column;
+  height: 300px;
+}
+.instagramIcon {
+  width: 30px;
+  height: 30px;
+}
+.ifooodIcon {
+}
+
+.menuIcon {
+  color: #bb0000;
+}
+
+.card {
+  border-radius: 8px;
+  color: white;
+  width: 300px;
+  height: 200px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px #d59a44;
+}
+
+.card:hover {
+  box-shadow: 0px 7px 10px 2px rgba(255, 198, 154, 1);
+}
+.icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 16px;
+}
+
+.cardTitle {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.cardDescription {
+  font-size: 15px;
+
+  color: black;
+}
+
+.feedbackSection {
+  text-align: center;
+}
+
+.feedbackText {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #000000;
+  text-align: justify;
+}
+
+.feedbackButton {
+  padding: 10px 20px;
+  background-color: #bb0000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+  margin-bottom: 25px;
+}
+
+.feedbackButton:hover {
+  background-color: #ff3b30;
+}
+
+@media (min-width: 420px) {
   .container {
     max-width: 420px;
   }
- }
+}
 
- @media (min-width: 768px){
+@media (min-width: 768px) {
   .container {
     max-width: 768px;
   }
-  .cards{
+  .cards {
     flex-direction: row;
   }
   .description {
     font-size: 17px;
     padding-left: 16px;
     padding-right: 16px;
-
   }
   .cardDescription {
     font-size: 16px;
@@ -141,37 +154,35 @@
     text-align: center;
     font-size: 17px;
   }
- }
+}
 
- @media (min-width: 1024px){
+@media (min-width: 1024px) {
   .container {
     max-width: 1024px;
   }
   .description {
     font-size: 20px;
-    padding-left:20px;
+    padding-left: 20px;
     padding-right: 20px;
-
   }
   .instagramIcon {
-    width: 45px; 
+    width: 45px;
     height: 45px;
   }
   .ifooodIcon {
-    font-size: 45px; 
+    font-size: 45px;
   }
-  
+
   .menuIcon {
     font-size: 45px;
   }
   .feedbackText {
     font-size: 20px;
   }
- }
+}
 
- @media (min-width: 1420px){
+@media (min-width: 1920px) {
   .container {
-    max-width: 1420px;
+    max-width: 1920px;
   }
-  
- }
+}

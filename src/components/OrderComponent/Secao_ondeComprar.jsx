@@ -31,15 +31,16 @@ function OndeComprar() {
     <section>
       <div className={css.bg}>
         <div className={css.container}>
+          <div className={css.background}></div>
+          <div className={css.content}>
           <h1 className={"title"}>Onde comprar nossos pudins</h1>
-          <hr />
           <p className={css.description}>
             Você pode encontrar nossos deliciosos pudins em diversas plataformas e canais de comunicação. Escolha o método que for mais conveniente para você e desfrute de nossos sabores irresistíveis.
           </p>
           <div className={css.cards} data-aos="fade-up" data-aos-delay="300">
             {ServiceData.map((data, index) => (
               <div key={index} className={css.card} data-aos="fade-up" data-aos-delay={data.aosDelay}>
-                <div data-aos="zoom-in" data-aos-delay="600">
+              <div data-aos="zoom-in" data-aos-delay="600">
                   {data.icon}
                 </div>
                 <h2 className={css.cardTitle}>{data.title}</h2>
@@ -56,6 +57,7 @@ function OndeComprar() {
             <button className={css.feedbackButton}>
               Entrar em contato
             </button>
+            </div>
           </div>
         </div>
       </div>
