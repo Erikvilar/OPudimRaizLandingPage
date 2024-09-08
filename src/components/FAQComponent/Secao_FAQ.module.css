@@ -1,13 +1,36 @@
 .bgFAQ {
-  /* background-image: linear-gradient(to right top, #000000, #412a03, #ffcf83, #ffcd85, #5a3505); */
-
-
+  position: relative;
+  overflow: hidden; 
   }
+
+  .bgFAQ::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/OPudimRaizLandingPage/src/images/backgroundImage.jpg);
+  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  filter: blur(4px); 
+  z-index: -1; 
+  opacity: 0.7; 
+}
+.container {
+  position: relative;
+  z-index: 1; 
+}
+
   .container {
       display: flex;
       flex-direction: column;
+     
       padding: 32px;
-      max-width: 1440px;
+      gap: 2rem;
       margin: auto;
     }
     .container hr {
@@ -30,28 +53,28 @@
     .faqQuestion {
       margin: 0.5rem 0;
       cursor: pointer;
+      font-weight: 700;
       transition: background-color 0.3s;
       display: flex;
       justify-content: space-between;
       text-align: justify;
-      border: 1px solid black;
-      border-radius:10px ;
+      border: 1px solid #3b0000;
+      border-radius: 10px;
       padding: 5px;
-      background-color: white;
-  
+      color: black;
     }
    
     .faqAnswer {
       padding: 1rem;
-  
       margin-top: -0.5rem;
+      font-weight: 600;
       margin-bottom: 0.5rem;
       text-decoration: none;
-    }
-    
+      color: black;
+  }
     
   .faqQuestion:hover {
-    background-color: rgb(255 255 255);
+    background-color: rgb(167 81 81 / 15%);
   }
     .faqQuestion.active+.faqAnswer {
       display: block;

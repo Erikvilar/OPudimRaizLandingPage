@@ -14,4 +14,27 @@ font-family: "Poppins",sans-serif;
   font-weight: 600;
 }
 
+.title2 {
+    font-family: "Montserrat", sans-serif;
+    background: linear-gradient(to right, #7f0000 0%, #3b0000 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 100% 100%;
+    background-position: 0px 0px;
+    width: auto;
+}
+
+
+@media (min-width: 768px) {
+  .title2 {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .title2 {
+    font-size: 40px;
+  }
+}
+
 

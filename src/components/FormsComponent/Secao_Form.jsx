@@ -53,7 +53,7 @@ function Secao_Form() {
 		<section>
 			<div  className={css.bgForm}>
 				<div className={css.container}>
-				<h1 className={"title"}>Entre em Contato Conosco</h1>
+				<h1 className={"title2"}>Entre em Contato Conosco</h1>
 					<div className={css.formContainer} data-aos="zoom-in" >
 					<form className={css.form} >
 				<label htmlFor="">Digite o seu nome*</label>
