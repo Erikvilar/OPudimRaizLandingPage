@@ -1,5 +1,6 @@
 .bgFAQ {
   background-image: linear-gradient(to right top, #ffd27e, #ffd080, #ffcf83, #ffcd85, #ffcc88);
+  height: 50vh;
   }
   .container {
       display: flex;

@@ -2,7 +2,7 @@ import css from './AboutComponent.module.css'
 const AboutComponent = () => {
 	return (
 	
-		<section className={css.AboutComponent}>
+		<section className={css.AboutComponent} id="about">
 			<h1>Quem somos</h1>
 			<div className={css.AboutContent}>
 				<div>

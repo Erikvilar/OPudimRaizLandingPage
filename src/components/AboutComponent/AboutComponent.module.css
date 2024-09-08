@@ -1,14 +1,17 @@
 .AboutComponent {
-  background-color: rgb(255 210 126 / 77%);
+  position: relative;
+  z-index: 1;
+  background-color: white;
 
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 20px; 
+  height: 100vh;
 }
 .AboutContent {
   display: flex;
   padding: 30px;
   border-radius: 10px;
-  width: 360px;
+  width: 1420px;
   margin: auto;
 }
 .AboutContent p {

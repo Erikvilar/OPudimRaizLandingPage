@@ -1,20 +1,30 @@
 .navBarComponent {
-  width: 360px;
-  background-color:white;
-
-  height: 50px;
-  color: white;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.326);
+  padding: 20px;
   position: fixed;
-  z-index: 1;
-  top:0;
-  box-shadow: 0px 2px 10px 0px rgb(106, 102, 102);
+  top: 0;
+  left: 0;
+  z-index: 2;
+  height: 80px;
+  color: white;
+
 }
-.navBarComponent ul {
+.navBarComponent h2 {
+  background: linear-gradient(to right top, #896003, #9e7218, #b48529, #ca983a, #e1ac4a, #dc9f4d, #d69251, #cd8754, #9e5f49, #6a3d39, #372123, #000000);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  font-family: "Poppins",sans-serif;
+}
+.navBarComponent div {
+
+  width: 1420px;
   list-style: none;
   display: flex;
+  color: black;
+
   margin: auto;
- 
-  
 }
 .navBarComponent ul li {
   list-style: none;
@@ -26,7 +36,7 @@
   padding-right: 5px;
   cursor: pointer;
 }
-.navBarComponent button:nth-child(2) {
+.navBarComponent button {
   background-color: rgb(255 210 126 / 77%);
 
   border-radius: 10px;
@@ -34,25 +44,11 @@
   text-align: center;
   padding: 10px;
   border: none;
-  margin-left: 100px;
   margin-right: 10px;
   margin-top: 5px;
   color: rgb(218, 88, 7);
 }
-.navBarComponent button:nth-child(3) {
-  background-color:  rgb(139, 105, 1);
-  border-radius: 10px;
-  font-size: 12px;
-  margin-top: 5px;
-  border: none;
-  text-align: center;
-  padding: 10px;
-  color: white;
-}
 
-.navBarComponent ul li:nth-child(3) {
-
-}
 .navBarComponent ul li a {
   color: rgb(255, 255, 255);
   font-weight: 500;
@@ -66,7 +62,3 @@
   font-weight: 600;
   border-bottom: 1px solid rgb(220, 101, 4);
 }
-
-
-
-

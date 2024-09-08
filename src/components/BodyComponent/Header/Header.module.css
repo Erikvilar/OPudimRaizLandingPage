@@ -1,20 +1,5 @@
 .header{
-    padding-top: 30px;
-    max-width: 412px;
+    border: 2px solid red;
     width: 100%;
-
-
     margin: auto;
-}
-@media (min-width:1920px) {
-    .header{
-        max-width: 1920px;
-     width: 100%;
-    }.hero{
-        max-width: 1000px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin: auto;
-    }
 }
