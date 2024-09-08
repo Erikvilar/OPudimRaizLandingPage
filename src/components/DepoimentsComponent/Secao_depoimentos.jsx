@@ -1,24 +1,27 @@
 import React from 'react';
 import css from './Secao_depoimentos.module.css';
 import "../../styles/default.css"
+import profile1 from '../../images/profile1.jpg';
+import profile2 from '../../images/profile2.jpg';
+import profile3 from '../../images/profile3.jpg';
 
 const Depoimentos = () => {
   const clientes = [
     {
-      nome: 'Ana L.',
-      imagem: 'https://randomuser.me/api/portraits/women/30.jpg',
+      nome: 'Ana Luisa',
+      imagem: profile1,
       depoimento: '“Experimentei o pudim de chocolate e fiquei encantada. É cremoso, com um sabor intenso de chocolate que derrete na boca. Com certeza, o melhor pudim que já provei. Voltarei para comprar mais!”',
       aosDelay: "300",
     },
     {
-      nome: 'Rafaela M.',
-      imagem: 'https://randomuser.me/api/portraits/women/80.jpg',
+      nome: 'Maria Paula',
+      imagem: profile2,
       depoimento: '“O pudim de leite condensado é simplesmente divino! A textura é perfeita, e o sabor me lembra os pudins que minha avó fazia. Recomendo a todos que buscam uma sobremesa caseira e deliciosa.”',
       aosDelay: "400",
     },
     {
-       nome: 'Daniel F.',
-      imagem: 'https://randomuser.me/api/portraits/men/60.jpg',
+       nome: 'Daniel Faria',
+      imagem: profile3,
       depoimento: '“O pudim de maracujá é uma verdadeira surpresa! A combinação da doçura com a acidez do maracujá é perfeita. Além disso, a entrega foi rápida e o atendimento, excelente. Super recomendo!”',
       aosDelay: "500",
     },

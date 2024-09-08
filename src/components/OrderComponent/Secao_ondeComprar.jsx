@@ -20,13 +20,21 @@ const ServiceData = [
   },
   {
     title: "CARDÁPIO VIRTUAL",
-    description: "Consulte nosso menu completo",
+    description: "Consulte nosso menu completo.",
     icon: <BiFoodMenu className={css.menuIcon} />,
     aosDelay: "500",
   },
 ];
 
 function OndeComprar() {
+
+  const scrollToForm = () => {
+    const formSection = document.getElementById("formSection");
+    if (formSection) {
+      formSection.scrollIntoView({ behavior: "auto" });
+    }
+  };
+
   return (
     <section>
       <div className={css.bg}>
@@ -53,7 +61,7 @@ function OndeComprar() {
             <p className={css.feedbackText}>
               Não encontrou o canal ideal para você? Deixe sua sugestão ou entre em contato!
             </p>
-            <button className={css.feedbackButton}>
+            <button className={css.feedbackButton} onClick={scrollToForm}>
               Entrar em contato
             </button>
           </div>

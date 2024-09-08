@@ -50,7 +50,7 @@ function Secao_Form() {
 	}
 
 	return (
-		<section>
+		<section id="formSection">
 			<div  className={css.bgForm}>
 				<div className={css.container}>
 				<h1 className={"title2"}>Entre em Contato Conosco</h1>
@@ -80,7 +80,7 @@ function Secao_Form() {
 						<div className={css.contactInfo}>
 							<div className={css.contactItem}>
 							<FaPhoneVolume />
-								<span>+553490000-000</span>
+								<span>+553499241-6676</span>
 							</div>
 							<div className={css.contactItem}>
 							<MdMarkEmailRead />

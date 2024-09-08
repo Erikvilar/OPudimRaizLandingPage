@@ -8,8 +8,7 @@ import VideoPresentationComponent from "../../VideoPresentationComponent/VideoPr
 const Main = () => {
   return (
     <main>
-      <AboutComponent />
-      <VideoPresentationComponent />
+      
       <Whatsapp />
       <OndeComprar />
       <Depoimentos />
