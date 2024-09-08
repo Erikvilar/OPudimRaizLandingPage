@@ -1,4 +1,4 @@
-import AboutComponent from "../../AboutComponent/AboutComponent";
+
 import Depoimentos from "../../DepoimentsComponent/Secao_depoimentos";
 import FAQ from "../../FAQComponent/Secao_FAQ";
 import Secao_Form from "../../FormsComponent/Secao_Form";
