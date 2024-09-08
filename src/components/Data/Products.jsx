@@ -20,15 +20,15 @@ const products = {
   Background: [
     {
       img: "https://s2-receitas.glbimg.com/Rk9SgtGOMV4--rt2mdDUXAI35z4=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2023/z/0/RsipkzTEu0Y1PGiavCpA/pudim-de-leite-condensado.jpg",
-      text:"-Oferecemos os mais variados tipos de pudim"
+      text:"Trabalhamos com os melhores ingredientes e de mais alta qualidade trazendo o melhor para nossos clientes."
     },
     {
       img: "https://areademulher.r7.com/wp-content/uploads/2022/03/1.jpg",
-       text:"Experimente nosso famosos e saboroso pudim tradicional."
+       text:"Um pouco da confeitaria mineira especializada em pudim diretamente para voçê."
     },
     {
       img: "https://s2-receitas.glbimg.com/K8OwZ9N2sE5DJltr-CALvxFBXNw=/0x0:633x391/984x0/smart/filters:strip_icc()/s.glbimg.com/po/rc/media/2015/09/22/10_19_02_409_Pudim.png",
-       text:"Pudins unicos feitos com amor e carinho especialmente para os fans"
+       text:"De fã para fã fazemos os melhores pudins da região venha e experiemente!.  "
     },
     {
       img: "https://amoradoceria.com.br/wp-content/uploads/2022/02/pudim-tradicional.jpg",

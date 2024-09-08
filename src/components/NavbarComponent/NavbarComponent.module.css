@@ -1,64 +1,68 @@
 .navBarComponent {
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.326);
+  background-color: white;
   padding: 20px;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 2;
-  height: 80px;
+  height: 85px;
   color: white;
 
 }
 .navBarComponent h2 {
-  background: linear-gradient(to right top, #896003, #9e7218, #b48529, #ca983a, #e1ac4a, #dc9f4d, #d69251, #cd8754, #9e5f49, #6a3d39, #372123, #000000);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  
-  font-family: "Poppins",sans-serif;
-}
-.navBarComponent div {
 
+  font-weight: 500;
+  font-size: 35px;
+  letter-spacing: 2px;
+  color: rgb(132, 132, 132);
+  font-family: "Oswald",sans-serif;
+}
+.navBarComponent .NavbarContent{
+  justify-content: space-between;
   width: 1420px;
   list-style: none;
   display: flex;
   color: black;
-
   margin: auto;
+}
+.navBarComponent .NavbarContent div{
+display: flex;
+}
+.navBarComponent .NavbarContent img{
+  margin-left: 20px;
+width: 70px;
+filter: drop-shadow(5px 5px 5px rgb(216, 119, 16));
+height: 70px;
+margin-top: -10px;
 }
 .navBarComponent ul li {
   list-style: none;
   display: inline-block;
   margin: 5px;
-  position: relative;
-  left: 0;
   height: 18px;
   padding-right: 5px;
+ 
   cursor: pointer;
 }
-.navBarComponent button {
-  background-color: rgb(255 210 126 / 77%);
-
-  border-radius: 10px;
-  font-size: 12px;
-  text-align: center;
-  padding: 10px;
-  border: none;
-  margin-right: 10px;
-  margin-top: 5px;
-  color: rgb(218, 88, 7);
-}
-
-.navBarComponent ul li a {
-  color: rgb(255, 255, 255);
-  font-weight: 500;
-  font-size: 14px;
+.navBarComponent ul li a{
   text-decoration: none;
-  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-family: "Oswald",sans-serif;
+  color: black;
+  padding-bottom: 10px;
+  transition: 0.5s;
 }
+
+
+
 .navBarComponent ul li a:hover {
-  padding-bottom: 8px;
-  color: rgb(220, 101, 4);
+
+  color: orange;
   font-weight: 600;
-  border-bottom: 1px solid rgb(220, 101, 4);
+
+  border-bottom: 3px solid black;
+
 }
