@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { MdOutlineQuestionAnswer } from "react-icons/md";
 import css from './Secao_FAQ.module.css';
-import "../../styles/default.css"
+
 
 const FAQ = () => {
   const [activeIndex, setActiveIndex] = useState(null);

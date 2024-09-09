@@ -1,6 +1,7 @@
+/* Estilo padrão para desktop */
 .navBarComponent {
   width: 100%;
-  background-color: white;
+  background-color: rgb(252, 252, 252);
   padding: 20px;
   position: fixed;
   top: 0;
@@ -8,61 +9,144 @@
   z-index: 2;
   height: 85px;
   color: white;
-
 }
-.navBarComponent h2 {
-
-  font-weight: 500;
-  font-size: 35px;
-  letter-spacing: 2px;
-  color: rgb(132, 132, 132);
-  font-family: "Oswald",sans-serif;
-}
-.navBarComponent .NavbarContent{
-  justify-content: space-between;
-  width: 1420px;
-  list-style: none;
-  display: flex;
+.NavbarContent h2 {
   color: black;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+
+}
+.NavbarContent .TitleAlign {
+  display: flex;
+  align-items: center;
+
+}
+.NavbarContent .TitleAlign img {
+  width: 50px;
+  height: 50px; 
+  margin-left:10px ;
+  margin-right: 10px;
+
+}
+
+.NavbarContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Alinha verticalmente os itens no centro */
+  max-width: 1800px;
   margin: auto;
 }
-.navBarComponent .NavbarContent div{
-display: flex;
-}
-.navBarComponent .NavbarContent img{
-  margin-left: 20px;
-width: 70px;
-filter: drop-shadow(5px 5px 5px rgb(216, 119, 16));
-height: 70px;
-margin-top: -10px;
-}
-.navBarComponent ul li {
+
+.NavbarLinks {
+  display: flex;
   list-style: none;
-  display: inline-block;
-  margin: 5px;
-  height: 18px;
-  padding-right: 5px;
- 
-  cursor: pointer;
 }
-.navBarComponent ul li a{
+
+.NavbarLinks li {
+  margin: 0 15px; /* Ajusta o espaçamento entre os itens */
+}
+.NavbarLinks li a:active {
+  color: orange;
+}
+.NavbarLinks li a:hover {
+  color: orange;
+}
+.NavbarLinks li a:active {
+  color: orange;
+}
+.NavbarLinks li:hover {
+  color: orange;
+  border-bottom: 2px solid black;
+}
+
+.NavbarLinks li a {
   text-decoration: none;
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 1px;
-  font-family: "Oswald",sans-serif;
+  font-family: "Oswald", sans-serif;
   color: black;
-  padding-bottom: 10px;
-  transition: 0.5s;
 }
 
+/* Esconde o botão de menu em telas maiores */
+.menuToggle {
+  display: none;
+}
+.offCanvasBody {
+  width: 120px;
 
+}
 
-.navBarComponent ul li a:hover {
+@media (max-width: 768px) {
+  .NavbarLinks {
+    display: none;
+  }
+  .offCanvasBody {
+    width: 120px;
 
-  color: orange;
-  font-weight: 600;
+  }
+  .navBarComponent {
+    height: 70px;
+    background-color: black;
+    color: white;
+  }
+  .navBarComponent h2 {
+    font-size: 20px;
+    position: relative;
+    font-family: "Oswald",sans-serif;
+    color: rgba(217, 214, 214, 0.886);
+    top: -5px;
+    left: -25px;
+ 
+  }
+  .navBarComponent img {
+    position: relative;
+    top: -10px;
+    left: -20px;
+ 
+  }
 
-  border-bottom: 3px solid black;
+  .menuToggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: -20px;
+    cursor: pointer;
+    color: white;
+  }
+  .offcanvasTitle {
+    background-color: transparent;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
 
+    
+  }
+  .offcanvasTitle .TitleAlign {
+    display: flex;
+    
+   
+  }
+  .offcanvasTitle .TitleAlign img {
+    width: 50px;
+    height: 50px;
+    margin-top: -10px;
+    position: relative;
+    margin-left: 10px;
+  }
+  .menuOffCanvas {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 200px;
+  }
+  .menuOffCanvas li a {
+    color: orange;
+    text-decoration: none;
+    font-family: "Oswald", sans-serif;
+  }
+  .menuOffCanvas li {
+    height: 30px;
+  }
 }

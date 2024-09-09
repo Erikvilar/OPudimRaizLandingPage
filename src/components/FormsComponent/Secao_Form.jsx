@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import css from './Secao_Form.module.css'
-import "../../styles/default.css"
+
 import { FaPhoneVolume, FaLocationDot  } from "react-icons/fa6";
 import { MdMarkEmailRead } from "react-icons/md";
 import emailjs from '@emailjs/browser';

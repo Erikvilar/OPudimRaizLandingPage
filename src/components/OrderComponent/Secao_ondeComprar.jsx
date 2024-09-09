@@ -1,6 +1,6 @@
 import React from "react";
 import { BiFoodMenu } from "react-icons/bi";
-import "../../styles/default.css"
+
 import instagramIcon from "../../images/instagram.png";
 import { SiIfood } from "react-icons/si";
 import css from "./Secao_ondeComprar.module.css";

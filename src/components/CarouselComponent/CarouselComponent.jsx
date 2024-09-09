@@ -1,21 +1,34 @@
 import Carousel from "react-bootstrap/Carousel";
-import css from "./CarouselComponent.module.css";
+import 'aos/dist/aos.css';
+function CarouselComponent ({type,classType, object}) {
 
-function CarouselComponent ({type, object}) {
   return (
-  <Carousel className={css.Carousel} fade={type}  >
+  <Carousel fade className={classType}
+  nextIcon={<span className="custom-carousel-next-icon" >⮞</span> }
+  prevIcon={<span className="custom-carousel-prev-icon">⮜</span>}
+  >
+     
     {object.map((n, index) => (
-      <Carousel.Item className={css.CarouselItem} key={index}>
+      <Carousel.Item className="CarouselItem" key={index} >
              
-        <div>
-    
-          <img src={n.img} alt="" />    
-          
+  
+<div className="products">
+      <div className="hero">
+        <h2><a href="#produtos">{n.name}</a></h2>
+        <div className="svg-list">
+        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#F19E39"><path d="m168.33-120-46.66-46.67 416.66-416.66q-20.66-46-8.33-98t57-96q47.67-47 112-58.34Q763.33-847 804.33-806 846-764.33 834-700.67 822-637 773-587.33q-41.33 42.66-92.67 55.66-51.33 13-94.66-5.66L524.33-476l309.34 309.33L787-120 477.67-428.67 168.33-120ZM291-468 171.67-587.33q-52-52-53.34-123.67Q117-782.67 167-836.67L413-590 291-468Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#F19E39"><path d="M560-570.67v-54.66q33-14 67.5-21t72.5-7q26 0 51 4t49 10v50.66q-24-9-48.5-13.5t-51.5-4.5q-38 0-73 9.5t-67 26.5Zm0 220V-406q33-13.67 67.5-20.5t72.5-6.83q26 0 51 4t49 10v50.66q-24-9-48.5-13.5t-51.5-4.5q-38 0-73 9t-67 27Zm0-110v-54.66q33-14 67.5-21t72.5-7q26 0 51 4t49 10v50.66q-24-9-48.5-13.5t-51.5-4.5q-38 0-73 9.5t-67 26.5Zm-308 154q51.38 0 100.02 11.84Q400.67-283 448-259.33v-416q-43.67-28-94.08-43t-101.92-15q-37.33 0-73.5 8.66Q142.33-716 106.67-702v421.33Q139-294 176.83-300.33q37.84-6.34 75.17-6.34Zm262.67 47.34q48-23.67 94.83-35.5 46.83-11.84 98.5-11.84 37.33 0 75.83 6t69.5 16.67v-418q-33.66-16-70.71-23.67-37.05-7.66-74.62-7.66-51.67 0-100.67 15t-92.66 43v416ZM481.33-160q-50-38-108.66-58.67Q314-239.33 252-239.33q-38.36 0-75.35 9.66-36.98 9.67-72.65 25-22.4 11-43.2-2.33Q40-220.33 40-245.33v-469.34q0-13.66 6.5-25.33Q53-751.67 66-758q43.33-21.33 90.26-31.67Q203.19-800 252-800q61.33 0 119.5 16.33 58.17 16.34 109.83 49.67 51-33.33 108.5-49.67Q647.33-800 708-800q48.58 0 95.29 10.33Q850-779.33 893.33-758q13 6.33 19.84 18 6.83 11.67 6.83 25.33v469.34q0 26.26-21.5 39.96t-43.17.7q-35-16-71.98-25.33-36.99-9.33-75.35-9.33-62 0-119.33 21-57.34 21-107.34 58.33Zm-204-330.67Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#F19E39"><path d="M644-80q-100 0-168-68t-68-168q0-100 68-168t168-68q100 0 168 68t68 168q0 100-68 168T644-80Zm0-66.67q70 0 119.67-49.66Q813.33-246 813.33-316t-49.66-119.67Q714-485.33 644-485.33t-119.67 49.66Q474.67-386 474.67-316t49.66 119.67Q574-146.67 644-146.67ZM146.67-160q-27 0-46.84-19.83Q80-199.67 80-226.67V-548q0-11.33 1.5-19.33 1.5-8 5.83-18l88-194.67h-16.66q-15.67 0-25.84-10.17-10.16-10.16-10.16-25.83v-28q0-15.67 10.16-25.83Q143-880 158.67-880H426q15.67 0 25.83 10.17Q462-859.67 462-844v28q0 15.67-10.17 25.83Q441.67-780 426-780h-16.67l86 198.67q-14.33 7.33-28.66 17Q452.33-554.67 440-544L335.33-780h-86.66l-102 226v327.33h206q3.66 17 11.16 34.5T380.67-160h-234ZM644-598.67q-38 0-63.67-25.66Q554.67-650 554.67-688t25.66-63.67Q606-777.33 644-777.33v178.66q0-38 25.67-63.66Q695.33-688 733.33-688T797-662.33q25.67 25.66 25.67 63.66H644Z"/></svg>
+        
         </div>
-        <div className={css.hero}>
-        <h2>Expêriencia doce e verdadeira tradicionalidade o pudim raiz</h2>
         <p>{n.text}</p>
-        <button>Veja mais</button>
+       <a href="#sobre" className="callToAction">
+        <button className="carousel-button">{n.button}</button>
+        </a>
+       </div>
+       <div className="images">
+          <img src={n.img} alt="" data-aos="fade-right"/>    
+        </div>
         </div>
       </Carousel.Item>
     ))}

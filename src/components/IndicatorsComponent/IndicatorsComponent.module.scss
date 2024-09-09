@@ -1,0 +1,36 @@
+.IndicatorsComponent {
+  background-color: orange;
+  height: 150px;
+
+  width: 100%;
+}
+.Indicators {
+  color: rgb(0, 0, 0);
+  font-family: "Oswald", Times, serif;
+  width: 1480px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+
+  span {
+    padding-left: 80px;
+    padding-right: 80px;
+    font-size: 40px;
+    color: rgb(80, 80, 80);
+    span {
+      padding: 10px;
+     
+    }
+  
+  }
+  p {
+    text-align: center;
+    font-size: 25px;
+    font-family: 500;
+    color: rgb(0, 0, 0);
+  }
+  div {
+    margin: 10px;
+  }
+}
