@@ -1,12 +1,14 @@
 import Carousel from "react-bootstrap/Carousel";
 import "aos/dist/aos.css";
+import CarouselButton from "./CarouselButton";
 function CarouselComponent({ type, classType, object }) {
   return (
     <Carousel
-      fade
+      fade={type}
+      slide
       className={classType}
-      nextIcon={<span className="custom-carousel-next-icon">⮞</span>}
-      prevIcon={<span className="custom-carousel-prev-icon">⮜</span>}
+      nextIcon={<span className="custom-carousel-next-icon"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#ffa500"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/></svg></span>}
+      prevIcon={<span className="custom-carousel-prev-icon"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#ffa500"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"/></svg></span>}
     >
       {object.map((n, index) => (
         <Carousel.Item className="CarouselItem" key={index}>
@@ -45,19 +47,14 @@ function CarouselComponent({ type, classType, object }) {
                 </svg>
               </div>
               <p>{n.text}</p>
-              <a href="#sobre" className="callToAction">
-              <button className="carousel-button">
-                {" "}
-        
-                  {n.button}{" "}
-       
-              </button>
-              </a>
+              <CarouselButton name="Eu quero!"/>
             </div>
+      
             <div className="images">
               <img src={n.img} alt="" data-aos="fade-right" />
             </div>
           </div>
+     
         </Carousel.Item>
       ))}
     </Carousel>

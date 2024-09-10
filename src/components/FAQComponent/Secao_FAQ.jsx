@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { MdOutlineQuestionAnswer } from "react-icons/md";
 import css from './Secao_FAQ.module.css';
 
-
 const FAQ = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
@@ -29,7 +28,7 @@ const FAQ = () => {
   return (
     <section className={css.bgFAQ}>
       <div className={css.container}>
-        <h1 className={"title"}>Perguntas Frequentes</h1>
+        <h1 className={css.title}>Perguntas Frequentes</h1>
       <hr />
         <div className={css.faqItem}>
           {faqs.map((faq, index) => (
@@ -41,7 +40,7 @@ const FAQ = () => {
                 <MdOutlineQuestionAnswer />
               </div>
 
-              <div
+              <div  
                 className={css.faqAnswer}
                 style={{ display: activeIndex === index ? 'block' : 'none' }}
               >

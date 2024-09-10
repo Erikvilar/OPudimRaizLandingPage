@@ -1,8 +1,10 @@
+import CarouselButton from "../CarouselComponent/CarouselButton";
 import css from "./AboutComponent.module.css";
 const AboutComponent = () => {
   return (
     <section className={css.AboutComponent} id="sobre">
       <h1>QUEM SOMOS</h1>
+      <hr />
       <div className={css.AboutContent}>
         <div className={css.About}>
           <div className={css.AboutPersonBox}>
@@ -11,7 +13,7 @@ const AboutComponent = () => {
               src="https://github.com/Erikvilar/OPudimRaizLandingPage/blob/main/src/images/img-circle-tania.jpg?raw=true"
               alt=""
             />
-            <span>Tânia Katia</span>
+            <span>Tânia Katya</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="40px"
@@ -52,9 +54,9 @@ const AboutComponent = () => {
           <div className={css.MolduraRight}></div>
           <div className={css.MolduraLeft}></div>
         </div>
-        <a href="#produtos">
-          <button>Nossos produtos</button>
-        </a>
+   
+        <CarouselButton name="Nossos Produtos"/>
+
       </div>
     </section>
   );

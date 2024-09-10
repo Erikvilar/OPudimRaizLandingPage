@@ -1,36 +1,97 @@
 .IndicatorsComponent {
-  background-color: orange;
-  height: 150px;
-
+display:flex;
+justify-content: center;
+align-items: center;
+  height: 80px;
   width: 100%;
 }
+
 .Indicators {
-  color: rgb(0, 0, 0);
   font-family: "Oswald", Times, serif;
-  width: 1480px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
-
-  span {
-    padding-left: 80px;
-    padding-right: 80px;
-    font-size: 40px;
-    color: rgb(80, 80, 80);
-    span {
-      padding: 10px;
-     
-    }
   
+  span {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;  
+    color: rgb(255, 246, 246);
+    
+    span {
+      font-size: 20px;  
+      padding: 5px;
+
+    }
   }
+
   p {
     text-align: center;
-    font-size: 25px;
-    font-family: 500;
-    color: rgb(0, 0, 0);
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
   }
+
   div {
-    margin: 10px;
+    margin: 5px;
   }
 }
+
+
+@media (min-width: 768px) {
+  .Indicators {
+    width: 720px;
+    
+    span {
+      padding-left: 40px;
+      padding-right: 40px;
+      font-size: 20px;
+      
+      span {
+        font-size: 20px;
+        padding: 7px;
+      }
+    }
+    
+    p {
+      font-size: 18px;
+    }
+    
+    div {
+      margin: 8px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .IndicatorsComponent{
+    height: 180px;
+  }
+  .Indicators {
+    width: 1000px;
+
+    
+    span {
+      padding-left: 60px;
+      padding-right: 60px;
+      font-size: 30px;
+      
+      span {
+        padding: 9px;
+        font-size: 30px;
+      }
+    }
+    
+    p {
+      font-size: 20px;
+    }
+    
+    div {
+      margin: 10px;
+    }
+  }
+}
+
+

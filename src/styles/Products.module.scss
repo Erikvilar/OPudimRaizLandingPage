@@ -1,115 +1,168 @@
 .CarouselProducts {
-    .svg-list{
-        padding: 10px;
-        svg{
-            margin: 10px;
-        }
+
+  
+  .hero button {
+    background-color: #ffa500;
+    width: 150px;
+    height: 50px;
+    
+    &:hover {
+      color: rgb(0, 0, 0);
+      background-color: white;
+      color: #ffa500;
     }
-    a{
-        text-decoration: none;
+  }
+
+  .svg-list {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    svg {
+      
+      width: 20px;
+      margin: 10px;
     }
-  .carousel-indicators button.active {
-    border-radius: 180deg;
-    background-color: orange;
   }
-  .carousel-item {
-    opacity: 0;
+
+  a {
+    text-decoration: none;
+  }.carousel-indicators{
+    button{
+      background-color: #ffa500;
+    }
   }
-  .carousel-item.active {
-    transition: opacity 0.3s ease-in-out;
-    opacity: 1;
-  }
+
   .carousel-inner {
-    padding: 100px;
     backdrop-filter: blur(5px);
     height: 820px;
   }
-  .custom-carousel-next-icon {
-    text-decoration: none;
-    font-size: 50px;
 
-  }
+  .custom-carousel-next-icon,
   .custom-carousel-prev-icon {
-    text-decoration: none;
-    font-size: 50px;
 
+    position: absolute;
+    top: 320px;
+    height: 50px;
+ 
   }
+
   .products {
     border-radius: 20px;
-    width: 1420px;
+    width: 100%;
     margin: auto;
-    height: 520px;
+
+   height: auto; /* Ajuste automático para mobile */
     display: flex;
-    align-items: start;
-    background-color: black;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 20px; /* Para dar um espaçamento confortável no mobile */
 
     img {
+      box-shadow: 1px 1px 20px rgb(0, 0, 0);
       border-radius: 20px;
-      margin-top: 50px;
       filter: brightness(0.9);
-      margin-right: 100px;
-      width: 400px;
-      height: 400px;
- 
-    }
- 
-    h2 {
-
+      width: 280px;
+      height: 200px;
+      margin-bottom: 20px;
+      position: relative;
+    }h2{
+      text-align: center;
+      max-height: 50px;
   
+
     }
+
     h2 a {
-      font-family: "Oswald", sans-serif;
+      font-family: "Playfair Display", serif;
       text-decoration: none;
-      font-size: 40px;
-      color: rgb(255, 255, 255);
+      font-size: 25px;
+
+      color: rgb(224, 224, 224);
+      text-align: center;
+   
     }
   }
- 
 
   .hero {
     display: flex;
     flex-direction: column;
-    align-items: start;
-    justify-content: space-between;
+
+
+    height: 350px;
+
     p {
       text-align: start;
-      font-size: 20px;
-      padding-right: 20px;
-      padding-left: 20px;
+      font-size: 12px;
+      overflow: hidden;
+      padding-bottom: 50px;
+
       line-height: 30px;
       letter-spacing: 2px;
       font-family: "Montserrat", sans-serif;
       color: white;
     }
+    button{
+      position: absolute;
+      bottom: 0;
+    }
   }
-  .carousel-button {
-    display: block;
-    border: none;
-    width: 280px;
-    position: absolute;
-    bottom: 0;
-    font-family: "Poppins", sans-serif;
-    font-size: 18px;
-    height: 80px;
-    display: flex;
-    align-items: center;
+}
 
-    justify-content: center;
-    background-color: #f19f41;
-    color: white;
-    transition: 0.5s;
+/* Ajustes para telas maiores (desktop) */
+@media (min-width: 768px) {
+ .CarouselProducts{
+  justify-content: center;
+  padding-top: 100px;
+  height: 80vh;
+  .products {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 50vh;
+    padding: 40px;
+
+    img {
+      margin-top: 0; /* Remover o espaçamento superior no desktop */
+      width: 400px;
+      height: 400px;
+    }
   }
-  .carousel-button::after {
-    content: "›";
-    padding-left: 20px;
-    font-size: 30px;
-    text-align: center;
+
+  .hero {
+
+
+    flex-direction: column;
+    justify-content: space-between;
+
+  }.hero h2 {
+    font-size: 2.2rem;
+    text-align: start;
+  
+  }.hero h2 a{
+    font-size: 2.2rem;
+    font-family: "Oswald", sans-serif;
+   
   }
-  .CarouselItem a {
-    text-decoration: none;
+ .hero p{
+    font-size: 20px;
+    padding-right: 50px;
+
+  }.hero button{
+    width: 280px;
+  }.carousel-control-prev, .carousel-control-next{
+  svg{width: 200px;}
   }
-  .carousel-button:hover {
-    color: black;
-    background-color: rgb(255, 255, 255);
+  .svg-list{
+    width: 180px;
+
+    justify-content: start;
+    svg{
+      width: 70px;
+      margin: 0 auto;
+    }
   }
+}
 }

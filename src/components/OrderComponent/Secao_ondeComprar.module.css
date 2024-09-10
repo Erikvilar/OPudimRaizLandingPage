@@ -1,177 +1,240 @@
-
 .bg {
-
-  height: 100vh;
-  background-image: linear-gradient(to right top, #ffd27e, #ffd080, #ffcf83, #ffcd85, #ffcc88);
+  background-color: white;
 }
+
 
 .container hr {
   border: 0;
-  height: 2px; 
+  height: 2px;
   background-color: #000;
   margin-top: -10px;
 
 }
-  svg {
-    font-size: 30px;
-    color: darkred;
-}
-  
-  .container {
-    display: flex;
-    flex-direction: column;
-   
-    padding: 32px;
-    max-width: 1440px;
-    gap: 2rem;
-    margin: auto;
-  }
-  
-  .description {
-    font-size: 16px;
-    color: black;
-    margin-bottom: 16px;
-    text-align: justify;
-  }
-  
-  .cards {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    gap: 1rem;
-    margin: auto;
-  }
-  .instagramIcon {
-    width: 30px; 
-    height: 30px;
-  }
-  .ifooodIcon {
-    color: red; 
-  }
-  
-  .menuIcon {
-    color: #bb0000;
-  }
-  
-  .card {
-    background-color: white;
-    border-radius: 8px;
-    padding: 24px;
-    text-align: center;
-    flex: 1;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 8px #D59A44;
-  }
-  
-  .card:hover{
-    box-shadow: 0px 7px 10px 2px rgba(255, 198, 154, 1);
-  }
-  .icon {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 16px;
-  }
-  
-  .cardTitle {
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 10px;
-    margin-bottom: 30px;
-  }
-  
-  .cardDescription {
-    font-size: 15px;
-    color: black;
-  }
 
-  .feedbackSection {
-    text-align: center;
-  }
+
+.container p {
+  font-weight: 600;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  padding: 32px;
+  max-width: 1440px;
+  gap: 2rem;
+  margin: auto;
+}
+
+.description {
+  font-size: 16px;
+  color: black;
+  margin-bottom: 16px;
+  text-align: justify;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  margin: auto;
+}
+
+.instagramIcon {
+  width: 60px;
+  height: 60px;
+}
+
+.ifooodIcon {
+  color: red;
+  font-size: 60px;
+}
+
+.menuIcon {
+  color: #bb0000;
+  font-size: 60px;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+.socialsDiv {
+  display: flex;
+  flex-direction: row;
+}
+
+.card {
+  text-decoration: none;
+  color: black;
+  border-radius: 8px;
+  padding: 24px;
+  text-align: justify;
+  cursor: pointer;
+  flex: 1;
+  box-shadow: 0 1px 2px #0000002b;
+  margin-bottom: 20px;
   
-  .feedbackText {
-    font-size: 16px;
-    margin-bottom: 30px;
-    color: #000000;
-    text-align: justify;
-  }
-  
-  .feedbackButton {
-    padding: 10px 20px;
-    background-color: #bb0000;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-size: 1rem;
-    margin-bottom: 25px;
-  }
-  
-  .feedbackButton:hover {
-    background-color: #ff3b30;
-  }
-  
-  
- @media (min-width: 420px){
+}.card:nth-child(1){
+  background-image: linear-gradient(to right top, #ffffff00, #cab8c836, #ffcbde00, #ffa500, #ffa500);
+
+}.card:nth-child(2){
+  background-image: linear-gradient(to right top, #ffffff, #cab8c836, #ffcbde00, #ffa500, #ffa500);
+
+}.card:nth-child(3){
+  background-image: linear-gradient(to right top, #ffffff, #cab8c836, #ffcbde00, #ffa500, #ffa500);
+} 
+
+.card:hover {
+ transform: scale(1.1);
+  box-shadow: 0px 1px 2px 1px rgb(239 134 54 / 47%);
+ 
+}
+
+
+.order {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 16px;
+}
+
+.cardTitle {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.cardDescription {
+  font-size: 13px;
+  color: black;
+}
+
+.imgPhone {
+  display: none;
+}
+
+.feedbackSection {
+  text-align: center;
+}
+
+.feedbackText {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #000000;
+  text-align: justify;
+}
+
+.feedbackButton {
+  padding: 10px 20px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+  margin-bottom: 25px;
+}
+
+.feedbackButton:hover {
+  background-color: orange;
+}
+
+
+@media (min-width: 420px) {
   .container {
     max-width: 420px;
   }
- }
+}
 
- @media (min-width: 768px){
+@media (min-width: 768px) {
   .container {
     max-width: 768px;
   }
-  .cards{
-    flex-direction: row;
+
+  .card {
+    width: 300px;
+    background-image: none;
+    box-shadow: none;
   }
+
   .description {
     font-size: 17px;
     padding-left: 16px;
     padding-right: 16px;
 
   }
+
   .cardDescription {
     font-size: 16px;
   }
+
   .cardTitle {
     font-size: 18px;
+  }
+
+  .imgPhone {
+    display: block;
+  }
+
+  .imgPhone img {
+    width: 100%;
   }
   .feedbackText {
     text-align: center;
     font-size: 17px;
   }
- }
+}
 
- @media (min-width: 1024px){
+@media (min-width: 1024px) {
   .container {
-    max-width: 1024px;
+   width: 70%;
+    padding-top:100px ;
+  }.cards{
+    width: 70%;
+
+   
+  }h1{
+    font-size: 2.2rem;
   }
+
   .description {
     font-size: 20px;
-    padding-left:20px;
+    padding-left: 20px;
     padding-right: 20px;
 
   }
+
   .instagramIcon {
-    width: 45px; 
-    height: 45px;
+    width: 50px;
+    height: 50px;
   }
+
   .ifooodIcon {
-    font-size: 45px; 
+    font-size: 50px;
   }
-  
+
   .menuIcon {
-    font-size: 45px;
+    font-size: 50px;
   }
+
+ 
+
+
   .feedbackText {
     font-size: 20px;
   }
- }
+}
 
- @media (min-width: 1420px){
+@media (min-width: 1420px) {
   .container {
     max-width: 1420px;
   }
-  
- }
+
+}
