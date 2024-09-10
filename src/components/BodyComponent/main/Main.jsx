@@ -12,12 +12,13 @@ const Main = () => {
     <main className={css.mainComponent}>
       <AboutComponent />
    
-      <ProductsComponent/>
-      <IndicatorsComponent/>
+      {/* <ProductsComponent/>
+  
       <OndeComprar />
+      <IndicatorsComponent/>
       <Depoimentos />
       <FAQ />
-      <Secao_Form />
+      <Secao_Form /> */}
     </main>
   );
 };

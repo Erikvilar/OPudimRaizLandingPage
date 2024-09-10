@@ -6,7 +6,7 @@ $hero-width-mobile: 90%;
 $hero-width-tablet: 80%;
 $hero-width-desktop: 70%;
 
-$hero-font-size-mobile: 30px;
+$hero-font-size-mobile: 35px;
 $hero-font-size-tablet: 50px;
 $hero-font-size-desktop: 80px;
 
@@ -14,7 +14,7 @@ $hero-text-font-size-mobile: 18px;
 $hero-text-font-size-tablet: 24px;
 $hero-text-font-size-desktop: 30px;
 
-$button-font-size-mobile: 12px;
+$button-font-size-mobile: 13px;
 $button-font-size-tablet: 18px;
 $button-font-size-desktop: 20px;
 
@@ -24,25 +24,26 @@ $button-font-size-desktop: 20px;
   overflow: hidden;
 
   .carousel-item {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: transparent;
-    z-index: 1;
+    // opacity: 0;
+    // transition: opacity 1s ease-in-out;
+    // position: absolute;
+    // width: 100%;
+    // height: 100%;
+    // top: 0;
+    // left: 0;
+    // background: transparent;
+    // z-index: 1;
 
-    &.active {
-      opacity: 1;
-    }
+    // &.active {
+    //   opacity: 1;
+    // }
 
     img {
       width: 100%;
       height: 100%;
-      filter: brightness(0.7);
-      object-fit: cover;
+      filter: brightness(0.5);
+      object-fit:cover;
+
       position: fixed;
       top: 0;
       left: 0;
@@ -56,6 +57,8 @@ $button-font-size-desktop: 20px;
   button,
   span {
     display: none;
+    position: relative;
+    z-index: -1;
   }
 
   .CarouselItem {
@@ -82,12 +85,16 @@ $button-font-size-desktop: 20px;
       font-size: $hero-font-size-mobile;
       font-family: "Oswald", sans-serif;
       padding-bottom: 20px;
-      transition: 0.5s;
+
       text-align: start;
 
       a {
+        transition: 1s ;
         text-decoration: none;
         color: white;
+        &:hover{
+          text-shadow: 1px 1px 15px white;
+        }
       }
     }
 
@@ -100,37 +107,36 @@ $button-font-size-desktop: 20px;
       font-size: $hero-text-font-size-mobile;
     }
 
-    button {
-      position: relative;
-      z-index: 1;
+   button{
+
       width: 180px;
       border: none;
       font-family: "Poppins", sans-serif;
       font-size: $button-font-size-mobile;
       height: 60px;
+      color: white;
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: black;
-      color: white;
-      transition: 0.5s;
+      background-color: rgb(0, 0, 0);
       position: absolute;
       bottom: 0;
-      transition: 0.3s;
-
-      &::after {
-        content: "›";
-        padding-left: 20px;
-        font-size: 30px;
+      &::after{
+      content:">";
+    
+      font-size: 20px;
+      padding-left: 10px;
       }
-    }button:active{
-
+      &:active{
+        background-color: white;
+        color: black;
+      }&:hover{
       background-color: white;
       color: black;
-      transform: scale(1.1);
-      
+   
     }
   }
+}
 
   .Carousel {
     max-width: 1200px;
@@ -138,8 +144,6 @@ $button-font-size-desktop: 20px;
   }
 }
 
-// Media query for portrait orientation (typically mobile)
-@media (orientation: portrait) {
   .CarouselHeader {
     height: $carousel-height-mobile;
   }
@@ -158,13 +162,54 @@ $button-font-size-desktop: 20px;
   .CarouselItem .hero p {
     font-size: $hero-text-font-size-mobile;
   }
-
-  .CarouselItem button {
-    width: 250px;
-    font-size: $button-font-size-mobile;
-    height: 60px;
+  @media (min-width: 1024px) {
+    .carousel-item {
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: transparent;
+      z-index: 1;
+  
+      &.active {
+        opacity: 1;
+      }
+    }
+    .CarouselHeader {
+      height: $carousel-height-desktop;
+    }
+  
+    .CarouselItem .hero {
+      width: $hero-width-desktop !important;
+      height: 450px !important;
+      top: 25% !important;
+      left: 10%;
+      padding: 50px;
+    }
+  
+    .CarouselItem .hero h2 {
+      font-size: $hero-font-size-desktop !important;
+    }
+  
+    .CarouselItem .hero p {
+      font-size: $hero-text-font-size-desktop !important;
+    }
+  
+    button {
+      width: 300px !important;;
+      font-size: $button-font-size-desktop !important;
+      height: 80px!important;
+      
+         
+    }
+  
   }
-}
+  
+
+
 
 // Media query for tablets
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -195,45 +240,3 @@ $button-font-size-desktop: 20px;
 }
 
 // Media query for desktops
-@media (min-width: 1024px) {
-  .carousel-item {
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: transparent;
-    z-index: 1;
-
-    &.active {
-      opacity: 1;
-    }
-  }
-  .CarouselHeader {
-    height: $carousel-height-desktop;
-  }
-
-  .CarouselItem .hero {
-    width: $hero-width-desktop !important;
-    height: 450px !important;
-    top: 40% !important;
-    left: 10%;
-    padding: 50px;
-  }
-
-  .CarouselItem .hero h2 {
-    font-size: $hero-font-size-desktop !important;
-  }
-
-  .CarouselItem .hero p {
-    font-size: $hero-text-font-size-desktop !important;
-  }
-
-  .CarouselItem button {
-    width: 300px !important;
-    font-size: $button-font-size-desktop !important;
-    height: 80px;
-  }
-}

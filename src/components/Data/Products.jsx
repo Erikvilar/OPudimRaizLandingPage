@@ -28,9 +28,9 @@ const products = {
   ],
   Background: [
     {
-      img: "https://recipesblob.oetker.com.br/assets/448ca0c7941945199bd2136f3909b09c/1272x764/bolo-pudim-de-chocolate.webp",
+      img: "https://anamariabrogui.com.br/assets/uploads/receitas/fotos/usuario-4231-46b6452df03bf4db5b3c421e923abdec.jpg",
       text:"Trabalhamos com os melhores ingredientes e de mais alta qualidade trazendo o melhor para nossos clientes.",
-      name:"Experiêncie o melhor do sabor tradicional O Pudim Raiz",
+      name:"Experiêncie o melhor do sabor tradicional, o pudim raiz.",
       button:"Veja mais"
     },
     {

@@ -42,7 +42,7 @@ const NavbarComponent = () => {
           ☰
         </button>
         <Offcanvas show={show} onHide={handleClose} style={{ width: "300px" }}>
-          <Offcanvas.Header closeButton>
+          <Offcanvas.Header closeButton className={css.offcanvasHeader}>
             <Offcanvas.Title className={css.offcanvasTitle}>
               <div className={css.TitleAlign}>
                 <h2>Menu</h2>
@@ -50,7 +50,7 @@ const NavbarComponent = () => {
               </div>
             </Offcanvas.Title>
           </Offcanvas.Header>
-          <Offcanvas.Body>
+          <Offcanvas.Body className={css.offcanvasBody}>
             <ul className={css.menuOffCanvas} >
             <li><a href="#about" onClick={handleClose}>SOBRE</a></li>
           <li><a href="#produtos" onClick={handleClose}>PRODUTOS</a></li>

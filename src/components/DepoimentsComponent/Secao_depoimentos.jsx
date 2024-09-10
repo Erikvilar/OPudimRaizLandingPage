@@ -29,15 +29,7 @@ const Depoimentos = () => {
       <div className={css.bgDepoimentos}>
       <div className={css.container}>
         <h1 className={"title"}>O que nossos clientes dizem</h1>
-        <div className={css.cards} data-aos="fade-up" data-aos-delay="300">
-          {clientes.map((cliente, index) => (
-             <div key={index} className={css.card} data-aos="zoom-in" data-aos-delay={cliente.aosDelay}>
-             <img src={cliente.imagem} alt={cliente.nome} className={css.image} />
-             <p className={css.testimonial}>{cliente.depoimento}</p>
-             <p className={css.name}>{cliente.nome}</p>
-           </div>
-          ))}
-        </div>
+       
       </div>
       </div>
     </section>
