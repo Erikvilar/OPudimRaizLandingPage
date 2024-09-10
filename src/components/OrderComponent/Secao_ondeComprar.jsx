@@ -2,6 +2,7 @@ import React from "react";
 import { BiFoodMenu } from "react-icons/bi";
 import "../../styles/default.css"
 import instagramIcon from "../../images/instagram.png";
+
 import { SiIfood } from "react-icons/si";
 import css from "./Secao_ondeComprar.module.css";
 
@@ -45,18 +46,28 @@ function OndeComprar() {
             Você pode encontrar nossos deliciosos pudins em diversas plataformas e canais de comunicação. Escolha o método que for mais conveniente para você e desfrute de nossos sabores irresistíveis.
           </p>
           <div className={css.cards} data-aos="fade-up" data-aos-delay="300">
-            {ServiceData.map((data, index) => (
-              <div key={index} className={css.card} data-aos="fade-up" data-aos-delay={data.aosDelay}>
-                <div data-aos="zoom-in" data-aos-delay="600">
-                  {data.icon}
+            <div className={css.teste}>
+              {ServiceData.map((data, index) => (
+                <div key={index} className={css.card} data-aos="fade-up" data-aos-delay={data.aosDelay}>
+                  <div data-aos="zoom-in" data-aos-delay="600">
+                    <div className={css.socialsDiv}>
+                      {data.icon}
+                      <div className={css.socials}>
+                        <h2 className={css.cardTitle}>{data.title}</h2>
+                        <p className={css.cardDescription}>{data.description}</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <h2 className={css.cardTitle}>{data.title}</h2>
-                <p className={css.cardDescription}>{data.description}</p>
-              </div>
 
 
-            ))}
+              ))}
+            </div>
+            <div className={css.imgPhone}>
+              <img src="https://images.pexels.com/photos/804065/pexels-photo-804065.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+            </div>
           </div>
+
           <div className={css.feedbackSection}>
             <p className={css.feedbackText}>
               Não encontrou o canal ideal para você? Deixe sua sugestão ou entre em contato!
