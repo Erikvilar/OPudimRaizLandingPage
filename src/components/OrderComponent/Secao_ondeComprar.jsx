@@ -2,7 +2,7 @@ import React from "react";
 import { BiFoodMenu } from "react-icons/bi";
 import "../../styles/default.css"
 import instagramIcon from "../../images/instagram.png";
-
+import PhoneImage from "../../images/phoneImage.jpg";
 import { SiIfood } from "react-icons/si";
 import css from "./Secao_ondeComprar.module.css";
 
@@ -46,7 +46,7 @@ function OndeComprar() {
             Você pode encontrar nossos deliciosos pudins em diversas plataformas e canais de comunicação. Escolha o método que for mais conveniente para você e desfrute de nossos sabores irresistíveis.
           </p>
           <div className={css.cards} data-aos="fade-up" data-aos-delay="300">
-            <div className={css.teste}>
+            <div className={css.order}>
               {ServiceData.map((data, index) => (
                 <div key={index} className={css.card} data-aos="fade-up" data-aos-delay={data.aosDelay}>
                   <div data-aos="zoom-in" data-aos-delay="600">
@@ -64,7 +64,7 @@ function OndeComprar() {
               ))}
             </div>
             <div className={css.imgPhone}>
-              <img src="https://images.pexels.com/photos/804065/pexels-photo-804065.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+             <img src={PhoneImage} alt="" />
             </div>
           </div>
 

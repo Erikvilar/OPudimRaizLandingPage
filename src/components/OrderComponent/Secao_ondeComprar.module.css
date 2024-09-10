@@ -11,10 +11,6 @@
 
 }
 
-svg {
-  font-size: 60px;
-  color: #990000;
-}
 
 .container p {
   font-weight: 600;
@@ -39,7 +35,6 @@ svg {
 
 .cards {
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
   gap: 1rem;
   margin: auto;
@@ -52,10 +47,12 @@ svg {
 
 .ifooodIcon {
   color: red;
+  font-size: 60px;
 }
 
 .menuIcon {
   color: #bb0000;
+  font-size: 60px;
 }
 
 .socials {
@@ -70,7 +67,7 @@ svg {
 }
 
 .card {
-  background-color: white;
+
   border-radius: 8px;
   padding: 24px;
   text-align: justify;
@@ -85,8 +82,9 @@ svg {
 }
 
 
-.teste {
+.order {
   display: flex;
+  flex-direction: column;
 }
 
 .icon {
@@ -106,7 +104,7 @@ svg {
 }
 
 .imgPhone {
-  flex-direction: column;
+  display: none;
 }
 
 .feedbackSection {
@@ -150,6 +148,8 @@ svg {
 
   .card {
     width: 300px;
+    background-image: none;
+    box-shadow: none;
   }
 
   .description {
@@ -167,6 +167,13 @@ svg {
     font-size: 18px;
   }
 
+  .imgPhone {
+    display: block;
+  }
+
+  .imgPhone img {
+    width: 100%;
+  }
   .feedbackText {
     text-align: center;
     font-size: 17px;
@@ -186,18 +193,25 @@ svg {
   }
 
   .instagramIcon {
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
   }
 
   .ifooodIcon {
-    font-size: 45px;
+    font-size: 50px;
   }
 
   .menuIcon {
-    font-size: 45px;
+    font-size: 50px;
   }
 
+  .order {
+    margin-right: 30px;
+  }
+
+  .imgPhone img {
+    width: 300px;
+  }
   .feedbackText {
     font-size: 20px;
   }

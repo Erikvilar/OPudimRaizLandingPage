@@ -36,6 +36,7 @@
   label {
     margin-bottom: 0.5rem;
     color: #333;
+    font-size: 20px;
   }
   
   input {
@@ -107,11 +108,12 @@
   }
 
   .iframeForm {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    height: 100%; 
+margin-top: 30px;
   }
+
+  iframe {
+    width: 100%;
+}
   
 @media (min-width: 768px){
   .formContainer {
@@ -128,9 +130,7 @@
 .contactItem {
   font-size: 17px;
 }
-iframe{
-  width: 768px;
-}
+
 }
 
 @media (min-width: 1024px){
@@ -143,9 +143,7 @@ iframe{
     .form {
       font-size: 20px;
     }
-    iframe{
-      width: 1024px;
-    }
+  
 }
 
 @media (min-width: 1420px){
@@ -157,7 +155,5 @@ iframe{
         max-width: 1420px;
     }
 
-    iframe{
-      width: 1420px;
-    }
+   
 }
