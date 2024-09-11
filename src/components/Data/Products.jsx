@@ -14,8 +14,20 @@ const products = {
     },
     {
       img: "src/images/pudim2.jpg",
-      text: "O pudim de café é uma sobremesa sofisticada que combina a suavidade e cremosidade de um pudim clássico com o sabor profundo e marcante do café. ",
+      text: "Esse pudim é para aqueles apaixonados por café. Com aroma surreal de café da roça e textura cremosa que desmancha na boca, esse pudim acompanhar calda de caramelo que realça o seu sabor.",
       name: "Pudim de Café",
+      button:"Eu quero !"
+    },
+    {
+      img: "src/images/pudim14.jpg",
+      text: "Pudim assado em banho Maria, feito de leite condensado assado com a mais tradicional paçoca. Um pudim delicioso, remete a sobremesa da roça.",
+      name: "Pudim de Paçoca",
+      button:"Eu quero !"
+    },
+     {
+      img: "src/images/foto11.jpg",
+      text: " Pudim de Panetone leva frutas cristalizadas que proporciona crocancia na boca, calda de caramelo e panetone na sua composição. Um pudim exclusivo para as festa de fim ano, por essa razão só fabricamos nessa época.",
+      name: "Pudim de Panetone",
       button:"Eu quero !"
     },
     

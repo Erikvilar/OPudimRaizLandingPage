@@ -9,7 +9,7 @@ const Footer = () => {
 	
 		<ul>
 			<li>@OpudimRaiz</li>
-			<li>Copyright © 2024 PudinRaiz CNPJ: 50.058.456/0001-80</li>
+			<li>Copyright © 2024 PudinRaiz CNPJ: 43.881.337/0001-68</li>
 		</ul>
 		</div>
 	</footer>

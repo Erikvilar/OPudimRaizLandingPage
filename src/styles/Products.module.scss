@@ -65,7 +65,7 @@
       border-radius: 20px;
       filter: brightness(0.9);
       width: 280px;
-      height: 200px;
+      height: 280px;
       margin-bottom: 20px;
       position: relative;
     }h2{
@@ -110,59 +110,152 @@
     }
   }
 }
+@media (min-width: 1024px) and (max-width: 1920px) {
+  .CarouselProducts {
+    .products {
+      flex-direction: row;
+      width: 80%;
+      height: 60vh;
+      padding: 40px;
 
-/* Ajustes para telas maiores (desktop) */
-@media (min-width: 768px) {
- .CarouselProducts{
-  justify-content: center;
-  padding-top: 100px;
-  height: 80vh;
-  .products {
-    display: flex;
-    flex-direction: row;
-    width: 70%;
-    height: 50vh;
-    padding: 40px;
+      img {
+        width: 350px;
+        height: 250px;
+      }
+    }
 
-    img {
-      margin-top: 0; /* Remover o espaçamento superior no desktop */
-      width: 400px;
-      height: 400px;
+    .hero {
+      flex-direction: column;
+      justify-content: space-between;
+
+      p {
+        font-size: 16px;
+        padding-right: 30px;
+      }
+
+      button {
+        width: 250px;
+      }
+    }
+
+    .carousel-control-prev, .carousel-control-next {
+      svg {
+        width: 100px;
+      }
+    }
+
+    .svg-list {
+      width: 150px;
+      justify-content: start;
+
+      svg {
+        width: 50px;
+      }
     }
   }
+}
+/* Ajustes para telas entre 768px e 1024px (tablets) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .CarouselProducts {
+    .products {
+      flex-direction: column;
+      width: 90%!important;
+      height: auto;
+      padding: 20px;
+      gap: 20px; /* Espaçamento entre os itens */
 
-  .hero {
+      img {
+        width: 200px!important; /* Corrigido para uma largura mais apropriada */
+        height: 200px!important; /* Altura ajustada conforme necessário */
+      }
+    }
 
-
-    flex-direction: column;
-    justify-content: space-between;
-
-  }.hero h2 {
-    font-size: 2.2rem;
-    text-align: start;
+    .hero {
+      height: 500px;
   
-  }.hero h2 a{
-    font-size: 2.2rem;
-    font-family: "Oswald", sans-serif;
-   
-  }
- .hero p{
-    font-size: 20px;
-    padding-right: 50px;
+      p {
+        font-size: 14px!important; /* Ajustado para melhor legibilidade */
+        padding-right: 20px;
+      }a{
+        font-size: 20px!important;
+      }
 
-  }.hero button{
-    width: 280px;
-  }.carousel-control-prev, .carousel-control-next{
-  svg{width: 200px;}
-  }
-  .svg-list{
-    width: 180px;
+      button {
+        width: 200px;
+      }
+    }
 
-    justify-content: start;
-    svg{
-      width: 70px;
-      margin: 0 auto;
+    .carousel-control-prev, .carousel-control-next {
+      svg {
+        width: 80px;
+      }
+    }
+
+    .svg-list {
+      width: 120px;
+
+      svg {
+        width: 40px;
+      }
     }
   }
 }
-}
+
+
+@media (min-width: 768px) {
+  .CarouselProducts{
+   justify-content: center;
+   padding-top: 100px;
+   height: 80vh;
+   .products {
+     display: flex;
+     flex-direction: row;
+     width: 70%;
+     height: 50vh;
+     padding: 40px;
+ 
+     img {
+       margin-top: 0; /* Remover o espaçamento superior no desktop */
+       width: 300px;
+       height: 320px;
+     }
+   }
+ 
+   .hero {
+  
+    height: 400px;
+    width: 90%;
+     flex-direction: column;
+     justify-content: space-between;
+ 
+   }.hero h2 {
+     font-size: 2.2rem;
+     margin-bottom: 50px;
+     text-align: start;
+   
+   }.hero h2 a{
+     font-size: 2.2rem;
+     font-family: "Oswald", sans-serif;
+    
+   }
+  .hero p{
+     font-size: 20px;
+     padding-right: 50px;
+ 
+   }.hero button{
+      top: 100%;
+     width: 280px;
+   }.carousel-control-prev, .carousel-control-next{
+   svg{width: 200px;}
+   }
+   .svg-list{
+     width: 180px;
+ 
+     justify-content: start;
+     svg{
+       width: 70px;
+       margin: 0 auto;
+     }
+   }
+ }
+ }

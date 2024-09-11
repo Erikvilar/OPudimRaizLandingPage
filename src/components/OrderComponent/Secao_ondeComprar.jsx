@@ -10,21 +10,21 @@ const ServiceData = [
     description: "Veja e solicite em nosso perfil.",
     icon: <img src={instagramIcon} alt="Instagram" className={css.instagramIcon} />,
     aosDelay: "300",
-    link:"https://music.youtube.com/watch?v=FLQtCGbtrNo&list=RDAOpvsB-apTvwUhYClL342fGw"
+    link:"https://www.instagram.com/opudimraiz?igsh=eDFkNHRzdjVtdDRq"
   },
   {
     title: "IFOOD",
     description: "Solicite agora pelo iFood!",
     icon: <SiIfood className={css.ifooodIcon} />,
     aosDelay: "400",
-    link:"https://music.youtube.com/watch?v=FLQtCGbtrNo&list=RDAOpvsB-apTvwUhYClL342fGw"
+    link:"https://www.ifood.com.br/delivery/uberlandia-mg/o-pudim-raiz-confeitaria-presidente-roosevelt/53fe7a01-b79b-4e84-9ca0-1522359cbbe9?UTM_Medium=share"
   },
   {
     title: "CARDÁPIO VIRTUAL",
     description: "Consulte nosso menu completo.",
     icon: <BiFoodMenu className={css.menuIcon} />,
     aosDelay: "500",
-    link:"https://music.youtube.com/watch?v=FLQtCGbtrNo&list=RDAOpvsB-apTvwUhYClL342fGw"
+    link:""
   },
 ];
 

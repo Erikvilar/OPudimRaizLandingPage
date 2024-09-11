@@ -1,5 +1,6 @@
 .bg {
   padding-top: 30px;
+  padding-bottom: 30px;
   background-color: white;
   box-sizing: border-box;
 }
@@ -143,6 +144,8 @@
   background-color: black;
   color: #fff;
   border: none;
+  width: 180px;
+  height: 70px;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;

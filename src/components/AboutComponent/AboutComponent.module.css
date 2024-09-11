@@ -7,22 +7,25 @@
   min-height: 100vh;
   padding-bottom: 100px;
 }
-.AboutComponent button{
-  
+.AboutComponent button {
+  width: 180px;
+  height: 70px;
   margin: auto;
 }
 
 .AboutComponent h1 {
-  font-size:  1.5rem;
+  font-size: 1.5rem;
   font-family: "Oswald", sans-serif;
   letter-spacing: 5px;
   padding-bottom: 20px;
   text-align: center;
   padding-top: 100px;
-  margin: auto; 
-}.AboutPersonBox img{
+  margin: auto;
+}
+.AboutPersonBox img {
   width: 80px;
-}.AboutPersonBox{
+}
+.AboutPersonBox {
   padding-bottom: 20px;
 }
 
@@ -33,7 +36,8 @@
   width: 100%;
 
   margin: auto;
-}.About p{
+}
+.About p {
   padding-right: 10px;
   font-size: 1rem;
   padding-left: 10px;
@@ -42,7 +46,7 @@
 
 .About h3 {
   padding-top: 30px;
- font-size: 40px;
+  font-size: 40px;
   color: #c89846;
   text-align: center;
   font-weight: 700;
@@ -56,7 +60,7 @@
   justify-content: center;
   width: 100%;
   padding: 10px;
-  padding-top:50px;
+  padding-top: 50px;
   padding-bottom: 50px;
   margin: auto;
   margin-bottom: 20px;
@@ -66,11 +70,15 @@
 
 .AboutImages img {
   margin: 10px;
-  width: 20%;
+  width: 23%;
   height: auto;
   border-radius: 0px;
   box-shadow: 0px 5px 20px rgb(50, 50, 50);
   transition: 0.5s;
+}
+
+.AboutImages img:active {
+  transform: scale(1.1);
 }
 
 .AboutImages .MolduraRight {
@@ -101,7 +109,6 @@
   cursor: pointer;
   transform: scale(1.05);
 }
-
 
 .About span {
   font-family: "Prata", serif;
@@ -138,26 +145,32 @@
 }
 
 @media (min-width: 768px) {
-  .AboutComponent{
-    height: 200vh;
+  .AboutComponent {
+    height: 220vh;
     padding: 80px;
-
-  }.AboutPersonBox img{
+   
+  }
+  .AboutPersonBox img {
     width: 80px;
-  
-  }.AboutPersonBox {
+  }
+  .AboutPersonBox {
     width: 100%;
-
-    
-  } .AboutContent{
-    width: 60%;
+  }
+  .AboutComponent button {
+    width: 200px;
+    height: 70px;
+    margin: auto;
+  }
+  .AboutContent {
+    width: 100%;
     margin: auto;
   }
 
   .About {
     width: 100%;
     font-size: 12px;
-  }.AboutContent p{
+  }
+  .AboutContent p {
     font-size: 20px;
     padding-left: 10px;
     padding-right: 10px;
@@ -165,26 +178,25 @@
     font-weight: 500;
     text-align: justify;
   }
-  .AboutImages 
-  .MolduraRight{
+  .AboutImages .MolduraRight {
     width: 100px;
     height: 100px;
   }
-  .AboutImages 
-  .MolduraLeft{
+  .AboutImages .MolduraLeft {
     width: 100px;
     height: 100px;
   }
 
   .AboutComponent h1 {
     font-size: 2.2rem;
-  }.AboutImages{
+  }
+  .AboutImages {
     width: 100%;
+    
     padding: 5px;
-    padding-top:50px;
+    padding-top: 50px;
     margin-bottom: 50px;
     padding-bottom: 50px;
-
   }
 
   .AboutImages img {
@@ -193,5 +205,13 @@
     height: 250px;
     width: 25%;
     max-width: 200px;
+  }
+}
+@media (min-width:1024px){
+  .AboutComponent{
+    height: 180vh;
+    
+  }.AboutContent{
+    width: 80%;
   }
 }

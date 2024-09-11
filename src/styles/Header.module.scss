@@ -21,15 +21,8 @@ $button-font-size-desktop: 20px;
 .CarouselHeader {
   height: $carousel-height-mobile;
   position: relative;
-  overflow: hidden;
-
 
   .carousel-item {
-
-
-
- 
-
     img {
       width: 100%;
       height: 100%;
@@ -38,7 +31,6 @@ $button-font-size-desktop: 20px;
       position: fixed;
       top: 0;
       left: 0;
-      
     }
 
     .svg-list {
@@ -62,16 +54,17 @@ $button-font-size-desktop: 20px;
 
     .hero {
       width: $hero-width-mobile;
-      height: 350px;
+      height: 500px;
       position: absolute;
-   
       top: 20%;
       left: 5%;
       z-index: 1;
-      
       padding: 10px;
       text-align: center;
       color: white;
+    }.hero button{
+      width: 180px;
+      height: 70px;
     }
 
     .hero h2 {
@@ -99,7 +92,6 @@ $button-font-size-desktop: 20px;
       padding-bottom: 20px;
       font-size: $hero-text-font-size-mobile;
     }
-
   }
 
   .Carousel {
@@ -108,16 +100,23 @@ $button-font-size-desktop: 20px;
   }
 }
 
-// Media query for tablets
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .CarouselHeader {
     height: $carousel-height-tablet;
+
+    .carousel-item {
+      img {
+        width: 100%;
+      }
+    }
   }
 
   .CarouselItem .hero {
     width: $hero-width-tablet;
-    top: 30%;
+    top: 30%!important;
     left: 10%;
+    height: auto; 
     padding: 20px;
   }
 
@@ -128,31 +127,27 @@ $button-font-size-desktop: 20px;
   .CarouselItem .hero p {
     font-size: $hero-text-font-size-tablet;
   }
-
-
 }
 
-// Media query for desktops
+
 @media (min-width: 1024px) {
   .CarouselHeader {
     height: $carousel-height-desktop;
-  
 
-  .CarouselItem .hero {
-    width: $hero-width-desktop !important;
-    height: 450px !important;
-    top: 25% !important;
-    left: 10%;
-    padding: 50px;
-  }
+    .CarouselItem .hero {
+      width: $hero-width-desktop !important;
+      height: 450px !important;
+      top: 25% !important;
+      left: 10%;
+      padding: 50px;
+    }
 
-  .CarouselItem .hero h2 {
-    font-size: $hero-font-size-desktop !important;
-  }
+    .CarouselItem .hero h2 {
+      font-size: $hero-font-size-desktop !important;
+    }
 
-  .CarouselItem .hero p {
-    font-size: $hero-text-font-size-desktop;
-  }
-
+    .CarouselItem .hero p {
+      font-size: $hero-text-font-size-desktop;
+    }
   }
 }
