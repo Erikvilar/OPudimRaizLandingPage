@@ -41,14 +41,14 @@ const AboutComponent = () => {
 
         <div className={css.AboutImages}>
 
-          <img data-aos="fade-up" data-aos-delay="100" src="src/images/pudim8.jpg" alt="" />
-          <img   data-aos="fade-up" data-aos-delay="200" src="src/images/pudim3.jpg" alt="" />
-          <img  data-aos="fade-up" data-aos-delay="300"src="src/images/pudimPote2.jpg" alt="" />
-          <img data-aos="fade-up" data-aos-delay="400" src="src/images/pudimPote1jpg.jpg" alt="" />
-          <img  data-aos="fade-up" data-aos-delay="500"src="src/images/pudimVermelho2.jpeg" alt="" />
-          <img  data-aos="fade-up" data-aos-delay="600"src="src/images/pudim13.jpg" alt="" />
-          <img  data-aos="fade-up" data-aos-delay="700"src="src/images/pudim10.jpg" alt="" />
-          <img  data-aos="fade-up" data-aos-delay="800"src="src/images/foto11.jpg" alt="" />
+          <img data-aos="fade-up" data-aos-delay="100" src="https://github.com/Erikvilar/OPudimRaizLandingPage/blob/erik/src/images/pudim8.jpg?raw=true" alt="" />
+          <img   data-aos="fade-up" data-aos-delay="200" src="https://github.com/Erikvilar/OPudimRaizLandingPage/blob/erik/src/images/pudim3.jpg?raw=true" alt="" />
+          <img  data-aos="fade-up" data-aos-delay="300"src="https://github.com/Erikvilar/OPudimRaizLandingPage/blob/erik/src/images/pudimPote2.jpeg?raw=true" alt="" />
+          <img data-aos="fade-up" data-aos-delay="400" src="https://github.com/Erikvilar/OPudimRaizLandingPage/blob/erik/src/images/pudimPote1jpg.jpg?raw=true" alt="" />
+          <img  data-aos="fade-up" data-aos-delay="500"src="https://github.com/Erikvilar/OPudimRaizLandingPage/blob/erik/src/images/pudimVermelho.jpeg?raw=true" alt="" />
+          <img  data-aos="fade-up" data-aos-delay="600"src="https://github.com/Erikvilar/OPudimRaizLandingPage/blob/erik/src/images/pudim13.jpg?raw=true" alt="" />
+          <img  data-aos="fade-up" data-aos-delay="700"src="https://github.com/Erikvilar/OPudimRaizLandingPage/blob/erik/src/images/pudim10.jpg?raw=true" alt="" />
+          <img  data-aos="fade-up" data-aos-delay="800"src="https://github.com/Erikvilar/OPudimRaizLandingPage/blob/erik/src/images/foto11.jpg?raw=true" alt="" />
           
         
           <div className={css.MolduraRight}></div>

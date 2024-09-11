@@ -69,9 +69,10 @@
 }
 
 .AboutImages img {
-  margin: 10px;
-  width: 23%;
-  height: auto;
+
+  margin: 5px;
+  width: 25%;
+  height: 100px;
   border-radius: 0px;
   box-shadow: 0px 5px 20px rgb(50, 50, 50);
   transition: 0.5s;
@@ -82,7 +83,7 @@
 }
 
 .AboutImages .MolduraRight {
-  background-image: url("src/images/moldura-right.png");
+  background-image: url("https://github.com/Erikvilar/OPudimRaizLandingPage/blob/erik/src/images/moldura-right.png?raw=true");
   background-size: cover;
   width: 200px;
   height: 200px;
@@ -94,7 +95,7 @@
 }
 
 .AboutImages .MolduraLeft {
-  background-image: url("src/images/moldura-left.png");
+  background-image: url("https://github.com/Erikvilar/OPudimRaizLandingPage/blob/erik/src/images/moldura-left.png?raw=true");
   background-size: cover;
   width: 200px;
   height: 200px;

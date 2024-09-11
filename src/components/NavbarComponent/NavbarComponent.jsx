@@ -12,7 +12,7 @@ const NavbarComponent = () => {
     <nav className={css.navBarComponent}>
       <div className={css.NavbarContent}>
         <div className={css.TitleAlign}>
-        <img src="src/images/logo-removebg-preview.png" alt="Logo" />
+        <img src="https://github.com/Erikvilar/OPudimRaizLandingPage/blob/erik/src/images/logo-removebg-preview.png?raw=true" alt="Logo" />
         <a href="#">  <h2>O PUDIM RAIZ</h2></a>
 
     
@@ -52,13 +52,13 @@ const NavbarComponent = () => {
             <Offcanvas.Title className={css.offcanvasTitle}>
               <div className={css.TitleAlign}>
                 <h2>Menu</h2>
-                <img src="src/images/logo-removebg-preview.png" alt="Logo" />
+                <img src="https://github.com/Erikvilar/OPudimRaizLandingPage/blob/erik/src/images/logo-removebg-preview.png?raw=true" alt="Logo" />
               </div>
             </Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body className={css.offcanvasBody}>
             <ul className={css.menuOffCanvas} >
-            <li><a href="#about" onClick={handleClose}>SOBRE</a></li>
+            <li><a href="#sobre" onClick={handleClose}>SOBRE</a></li>
           <li><a href="#produtos" onClick={handleClose}>PRODUTOS</a></li>
           <li><a href="#pedido" onClick={handleClose}>FAÇA SEU PEDIDO</a></li>
           <li><a href="#FAQ" onClick={handleClose}>FAQ</a></li>

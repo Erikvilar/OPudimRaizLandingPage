@@ -54,7 +54,7 @@ $button-font-size-desktop: 20px;
 
     .hero {
       width: $hero-width-mobile;
-      height: 500px;
+      height: 380px;
       position: absolute;
       top: 20%;
       left: 5%;
@@ -65,6 +65,8 @@ $button-font-size-desktop: 20px;
     }.hero button{
       width: 180px;
       height: 70px;
+      position: absolute;
+      bottom: 0;
     }
 
     .hero h2 {

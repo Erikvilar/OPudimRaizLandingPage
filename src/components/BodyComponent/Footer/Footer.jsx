@@ -3,7 +3,7 @@ const Footer = () => {
 	return (
 	<footer>
 			<div className={css.FooterLogo}> 
-			<img src="src/images/logo-removebg-preview.png" alt="" />
+			<img src="https://github.com/Erikvilar/OPudimRaizLandingPage/blob/erik/src/images/logo-removebg-preview.png?raw=true" alt="" />
 			</div>
 		<div className={css.FooterContact}>
 	

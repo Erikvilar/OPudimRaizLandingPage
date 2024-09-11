@@ -60,7 +60,7 @@ function OndeComprar() {
               ))}
             </div>
             <div className={css.imgPhone}>
-           <img src="src/images/undraw_mobile_content_xvgr.png" alt="" height={500} width={300}/>
+           <img src="https://github.com/Erikvilar/OPudimRaizLandingPage/blob/erik/src/images/undraw_mobile_content_xvgr.png?raw=true" alt="" height={500} width={300}/>
             </div>
           </div>
 

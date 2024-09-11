@@ -1,18 +1,20 @@
 import React, { useState } from 'react';
 import { MdOutlineQuestionAnswer } from "react-icons/md";
 import css from './Secao_FAQ.module.css';
-
+import Aos from 'aos';
 const FAQ = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const faqs = [
     {
       question: 'O pudim é feito de leite condensado?',
-      answer: 'Sim, nosso pudim é feito com leite condensado e não contém adição de trigo ou amido de milho.'
+      answer: 'Sim, nosso pudim é feito com leite condensado e não contém adição de trigo ou amido de milho.',
+      delay:100
     },
     {
       question: 'Quantas pessoas o pudim tamanho família serve?',
-      answer: 'O pudim tamanho família serve de 6 a 8 pessoas, com porções de aproximadamente 125g por pessoa.'
+      answer: 'O pudim tamanho família serve de 6 a 8 pessoas, com porções de aproximadamente 125g por pessoa.',
+      delay:200
     },
     {
       question: 'Vocês realizam entregas?',
@@ -20,7 +22,8 @@ const FAQ = () => {
     },
     {
       question: 'Há cobrança de taxa de entrega?',
-      answer: 'Sim, a taxa de entrega é terceirizada e calculada de acordo com o endereço de destino.'
+      answer: 'Sim, a taxa de entrega é terceirizada e calculada de acordo com o endereço de destino.',
+      delay:300
       
     }
   ];
@@ -32,10 +35,10 @@ const FAQ = () => {
         <div className={css.faqItem}>
           {faqs.map((faq, index) => (
             <div key={index}>
-              <div className={`${css.faqQuestion}  ${activeIndex === index ? 'active' : ''}`}
+              <div  className={`${css.faqQuestion}  ${activeIndex === index ? 'active' : ''}`}
                 onClick={() => setActiveIndex(activeIndex === index ? null : index)}
               >
-                <span className={css.questionText}>{faq.question}</span>
+                <span data-aos="zoom-in" data-aos-delay={faq.delay} className={css.questionText}>{faq.question}</span>
                 <MdOutlineQuestionAnswer />
               </div>
 

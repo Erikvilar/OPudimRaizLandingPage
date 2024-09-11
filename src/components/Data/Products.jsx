@@ -1,31 +1,31 @@
 const products = {
   products: [
     {
-      img: "src/images/pudimTradicionalSobre.jpeg",
+      img: "https://github.com/Erikvilar/OPudimRaizLandingPage/blob/erik/src/images/pudimTradicionalSobre.jpeg?raw=true",
       text: "Pudim Raiz, a sobremesa perfeita para seu dia. Pudim tradicional tamanho em familia 1kg, serve de 6 a 8 pessoas, um pduim com cremosidade que remete o sabor da sua infancia.",
       name: "Pudim Tradicional",
       button:"Eu quero !"
     },
     {
-      img: "src/images/pudim1.jpg",
-      text: "produzido com chocolate nobre e a calda de morangos frescois, feito artesanalmente. Um pudim que vai além da beleza, com o sabor marcante da combinação de sabores. ",
+      img: "https://github.com/Erikvilar/OPudimRaizLandingPage/blob/erik/src/images/pudim1.jpg?raw=true",
+      text: "produzido com chocolate nobre e a calda de morangos frescos, feito artesanalmente. Um pudim que vai além da beleza, com o sabor marcante da combinação de sabores. ",
       name: "Pudim de chocolate branco com calda de morango",
       button:"Eu quero !"
     },
     {
-      img: "src/images/pudim2.jpg",
+      img: "https://github.com/Erikvilar/OPudimRaizLandingPage/blob/erik/src/images/pudim2.jpg?raw=true",
       text: "Esse pudim é para aqueles apaixonados por café. Com aroma surreal de café da roça e textura cremosa que desmancha na boca, esse pudim acompanhar calda de caramelo que realça o seu sabor.",
       name: "Pudim de Café",
       button:"Eu quero !"
     },
     {
-      img: "src/images/pudim14.jpg",
+      img: "https://github.com/Erikvilar/OPudimRaizLandingPage/blob/erik/src/images/pudim14.jpg?raw=true",
       text: "Pudim assado em banho Maria, feito de leite condensado assado com a mais tradicional paçoca. Um pudim delicioso, remete a sobremesa da roça.",
       name: "Pudim de Paçoca",
       button:"Eu quero !"
     },
      {
-      img: "src/images/foto11.jpg",
+      img: "https://github.com/Erikvilar/OPudimRaizLandingPage/blob/erik/src/images/foto11.jpg?raw=true",
       text: " Pudim de Panetone leva frutas cristalizadas que proporciona crocancia na boca, calda de caramelo e panetone na sua composição. Um pudim exclusivo para as festa de fim ano, por essa razão só fabricamos nessa época.",
       name: "Pudim de Panetone",
       button:"Eu quero !"
