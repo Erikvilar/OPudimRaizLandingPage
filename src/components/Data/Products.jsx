@@ -30,7 +30,7 @@ const products = {
     },
     {
       img: "https://img.cybercook.com.br/receitas/723/pudim-de-leite-condensado-sem-ir-ao-fogo.jpeg",
-       text:"Um pouco da confeitaria mineira especializada em pudim diretamente para voçê.",
+       text:"Um pouco da confeitaria mineira especializada em pudim diretamente para você.",
        name:"Experiêncie o melhor do sabor tradicional o pudim raiz",
        button:"Veja mais"
     },   

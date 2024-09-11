@@ -13,12 +13,13 @@ const NavbarComponent = () => {
       <div className={css.NavbarContent}>
         <div className={css.TitleAlign}>
         <img src="src/images/logo-removebg-preview.png" alt="Logo" />
-          <h2>O PUDIM RAIZ</h2>
+        <a href="#">  <h2>O PUDIM RAIZ</h2></a>
+
     
         </div>
         <ul className={css.NavbarLinks}>
           <li>
-            <a href="#about" >
+            <a href="#sobre" >
               SOBRE
             </a>
           </li>
@@ -38,8 +39,8 @@ const NavbarComponent = () => {
             </a>
           </li>
           <li>
-            <a href="#contatos">
-              CONTATOS
+            <a href="#formSection">
+              CONTATE-NOS
             </a>
           </li>
         </ul>
@@ -61,7 +62,8 @@ const NavbarComponent = () => {
           <li><a href="#produtos" onClick={handleClose}>PRODUTOS</a></li>
           <li><a href="#pedido" onClick={handleClose}>FAÇA SEU PEDIDO</a></li>
           <li><a href="#FAQ" onClick={handleClose}>FAQ</a></li>
-          <li><a href="#contatos" onClick={handleClose}>CONTATOS</a></li>
+          <li><a href="#formSection" onClick={handleClose}>CONTATE-NOS</a></li>
+       
             </ul>
           </Offcanvas.Body>
         </Offcanvas>

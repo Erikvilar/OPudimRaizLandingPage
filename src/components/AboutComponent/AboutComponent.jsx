@@ -41,14 +41,14 @@ const AboutComponent = () => {
 
         <div className={css.AboutImages}>
 
-          <img src="src/images/pudim8.jpg" alt="" />
-          <img src="src/images/pudim3.jpg" alt="" />
-          <img src="src/images/pudimPote2.jpg" alt="" />
-          <img src="src/images/pudimPote1jpg.jpg" alt="" />
-          <img src="src/images/pudimPote2.jpg" alt="" />
-          <img src="src/images/pudimPote1jpg.jpg" alt="" />
-          <img src="src/images/pudimPote2.jpg" alt="" />
-          <img src="src/images/pudimPote1jpg.jpg" alt="" />
+          <img data-aos="fade-up" data-aos-delay="100" src="src/images/pudim8.jpg" alt="" />
+          <img   data-aos="fade-up" data-aos-delay="200" src="src/images/pudim3.jpg" alt="" />
+          <img  data-aos="fade-up" data-aos-delay="300"src="src/images/pudimPote2.jpg" alt="" />
+          <img data-aos="fade-up" data-aos-delay="400" src="src/images/pudimPote1jpg.jpg" alt="" />
+          <img  data-aos="fade-up" data-aos-delay="500"src="src/images/pudimVermelho2.jpeg" alt="" />
+          <img  data-aos="fade-up" data-aos-delay="600"src="src/images/pudim13.jpg" alt="" />
+          <img  data-aos="fade-up" data-aos-delay="700"src="src/images/pudim10.jpg" alt="" />
+          <img  data-aos="fade-up" data-aos-delay="800"src="src/images/foto11.jpg" alt="" />
           
         
           <div className={css.MolduraRight}></div>

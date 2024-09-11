@@ -68,7 +68,7 @@ function OndeComprar() {
             <p className={css.feedbackText}>
               Não encontrou o canal ideal para você? Deixe sua sugestão ou entre em contato!
             </p>
-            <a href="#contato">
+            <a href="#formSection">
             <button className={css.feedbackButton}>
               Entrar em contato
             </button>

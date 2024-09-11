@@ -7,6 +7,7 @@ import "./styles/default.scss";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import React from "react";
+import Whatsapp from "./components/WhatsappComponent/WhatsappComponent";
 
 function App() {
   React.useEffect(() => {
@@ -20,7 +21,8 @@ function App() {
     <section className={"default"}>
       <Header />
       <Main />
-      <Footer />
+      <Footer/>
+      <Whatsapp/>
     </section>
   );
 }
