@@ -84,7 +84,7 @@ function Secao_Form() {
 							</div>
 							<div className={css.contactItem}>
 							<MdMarkEmailRead />
-								<span>tania@gmail.com</span>
+								<span>opudimraiz@gmail.com</span>
 							</div>
 							<div className={css.contactItem}>
 							<FaLocationDot />
