@@ -1,0 +1,50 @@
+.depoimentos {
+
+  padding-top: 50px;
+  width: 100%;
+  color: rgb(0, 0, 0);
+  background-color: white;
+  text-align: center;
+  .carousel-indicators {
+  
+    button {
+      border-radius: 360px;
+      background-color: orange  ;
+      height: 5px;
+      width: 5px;
+
+    }
+  }
+  .carouselTestimonials {
+  
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-size: 1rem;
+    font-style: italic;
+    font-family: "Prata",sans-serif;
+    p{
+
+      padding-top: 20px;
+      margin-bottom: 20px;
+      font-weight: 800;
+ 
+    }
+    .content{
+      width: 90%;
+      margin: auto;
+    }
+  }
+}
+@media(min-width:768px){
+ .depoimentos {
+  p{
+    font-size: 1.2rem;
+  }span{
+    font-size: 20px;
+  }
+
+  }
+}

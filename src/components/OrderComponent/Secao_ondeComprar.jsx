@@ -30,18 +30,13 @@ const ServiceData = [
 
 function OndeComprar() {
 
-  const scrollToForm = () => {
-    const formSection = document.getElementById("formSection");
-    if (formSection) {
-      formSection.scrollIntoView({ behavior: "auto" });
-    }
-  };
+
 
   return (
-    <section>
+    <section id="pedido">
       <div className={css.bg}>
         <div className={css.container}>
-          <h1 className={"title2"}>NOSSOS CANAIS</h1>
+          <h1 className={css.title}>NOSSOS CANAIS</h1>
           <hr />
           <p className={css.description}>
             Você pode encontrar nossos deliciosos pudins em diversas plataformas e canais de comunicação. Escolha o método que for mais conveniente para você e desfrute de nossos sabores irresistíveis.
@@ -73,9 +68,11 @@ function OndeComprar() {
             <p className={css.feedbackText}>
               Não encontrou o canal ideal para você? Deixe sua sugestão ou entre em contato!
             </p>
-            <button className={css.feedbackButton} onClick={scrollToForm}>
+            <a href="#contato">
+            <button className={css.feedbackButton}>
               Entrar em contato
             </button>
+            </a>
           </div>
         </div>
       </div>

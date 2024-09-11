@@ -11,12 +11,13 @@ const Main = () => {
   return (
     <main className={css.mainComponent}>
       <AboutComponent />
-
       <ProductsComponent />
-
       <OndeComprar />
       <IndicatorsComponent />
+      <Depoimentos/>  
       <FAQ />
+      <Secao_Form/>
+   =
     </main>
   );
 };

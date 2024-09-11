@@ -26,10 +26,9 @@ const FAQ = () => {
   ];
 
   return (
-    <section className={css.bgFAQ}>
+    <section className={css.bgFAQ} >
       <div className={css.container}>
         <h1 className={css.title}>Perguntas Frequentes</h1>
-      <hr />
         <div className={css.faqItem}>
           {faqs.map((faq, index) => (
             <div key={index}>

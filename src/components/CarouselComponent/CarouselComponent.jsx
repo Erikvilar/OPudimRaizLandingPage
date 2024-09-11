@@ -1,6 +1,7 @@
 import Carousel from "react-bootstrap/Carousel";
 import "aos/dist/aos.css";
 import CarouselButton from "./CarouselButton";
+import products from "../Data/Products";
 function CarouselComponent({ type, classType, object }) {
   return (
     <Carousel
@@ -47,7 +48,7 @@ function CarouselComponent({ type, classType, object }) {
                 </svg>
               </div>
               <p>{n.text}</p>
-              <CarouselButton name="Eu quero!"/>
+              <CarouselButton name="Eu quero!" reference={object == products.products ? "#pedido" : "#sobre"}/>
             </div>
       
             <div className="images">

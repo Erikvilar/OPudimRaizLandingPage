@@ -1,39 +1,31 @@
 import React from 'react';
-import css from './Secao_depoimentos.module.css';
+
+import Comments from './comments';
+
+import { CarouselItem,Carousel } from 'react-bootstrap';
 
 
 const Depoimentos = () => {
-  const clientes = [
-    {
-      nome: 'Ana L.',
-      imagem: 'https://randomuser.me/api/portraits/women/30.jpg',
-      depoimento: '“Experimentei o pudim de chocolate e fiquei encantada. É cremoso, com um sabor intenso de chocolate que derrete na boca. Com certeza, o melhor pudim que já provei. Voltarei para comprar mais!”',
-      aosDelay: "300",
-    },
-    {
-      nome: 'Rafaela M.',
-      imagem: 'https://randomuser.me/api/portraits/women/80.jpg',
-      depoimento: '“O pudim de leite condensado é simplesmente divino! A textura é perfeita, e o sabor me lembra os pudins que minha avó fazia. Recomendo a todos que buscam uma sobremesa caseira e deliciosa.”',
-      aosDelay: "400",
-    },
-    {
-       nome: 'Daniel F.',
-      imagem: 'https://randomuser.me/api/portraits/men/60.jpg',
-      depoimento: '“O pudim de maracujá é uma verdadeira surpresa! A combinação da doçura com a acidez do maracujá é perfeita. Além disso, a entrega foi rápida e o atendimento, excelente. Super recomendo!”',
-      aosDelay: "500",
-    },
-  ];
-
   return (
-    <section>
-      <div className={css.bgDepoimentos}>
-      <div className={css.container}>
-        <h1 className={"title"}>O que nossos clientes dizem</h1>
-       
-      </div>
-      </div>
-    </section>
-  );
-};
+    
+   <section className="depoimentos" >
+    <Carousel className="carouselTestimonials" >
+   {Comments.map((c,index)=>(
+        <CarouselItem > 
+          <div className='content' data-aos="fade-up" data-aos-delay="300">  
+    
+        
+        
+            <span>" {c.text} "</span>
+            <p> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -800 960 960" width="24px" fill="#F19E39"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>{c.name} </p>
+           
+            </div>
+        
+     </CarouselItem>
+   ))}
+ </Carousel>
 
+   </section>
+  )
+}
 export default Depoimentos;

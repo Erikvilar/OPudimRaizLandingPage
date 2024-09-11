@@ -55,7 +55,7 @@ const AboutComponent = () => {
           <div className={css.MolduraLeft}></div>
         </div>
    
-        <CarouselButton name="Nossos Produtos"/>
+        <CarouselButton reference="#produtos"name="Nossos Produtos"/>
 
       </div>
     </section>

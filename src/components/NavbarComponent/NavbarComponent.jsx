@@ -33,6 +33,11 @@ const NavbarComponent = () => {
             </a>
           </li>
           <li>
+            <a href="#FAQ">
+              FAQ
+            </a>
+          </li>
+          <li>
             <a href="#contatos">
               CONTATOS
             </a>
@@ -55,6 +60,7 @@ const NavbarComponent = () => {
             <li><a href="#about" onClick={handleClose}>SOBRE</a></li>
           <li><a href="#produtos" onClick={handleClose}>PRODUTOS</a></li>
           <li><a href="#pedido" onClick={handleClose}>FAÇA SEU PEDIDO</a></li>
+          <li><a href="#FAQ" onClick={handleClose}>FAQ</a></li>
           <li><a href="#contatos" onClick={handleClose}>CONTATOS</a></li>
             </ul>
           </Offcanvas.Body>

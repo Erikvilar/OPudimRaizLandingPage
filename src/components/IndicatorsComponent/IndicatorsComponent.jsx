@@ -1,9 +1,9 @@
 import css from "./IndicatorsComponent.module.scss";
 import CountUp from "react-countup";
-import Aos from "aos";
+
 const IndicatorsComponent = () => {
   return (
-    <section className={css.IndicatorsComponent} data-aos="zoom-in" data-aos-delay="600">
+    <section className={css.IndicatorsComponent} data-aos="zoom-in" data-aos-delay="600" id="FAQ">
       <div className={css.Indicators}>
         <div>
 			<span>
